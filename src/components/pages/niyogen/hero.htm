@@ -23,10 +23,10 @@ NiyoGen Hero Section
     <div class="absolute bottom-[10%] right-[5%] w-[400px] h-[400px] bg-ns-green/20 dark:bg-ns-green/12 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-[80px] opacity-50 animate-blob animation-delay-3000"></div>
   </div>
 
-  <!-- Video Background -->
-  <figure class="absolute h-full w-full hero-bg-overlay-light dark:hero-bg-overlay-dark z-[-1]"></figure>
+  <!-- Video Background - Full Coverage -->
+  <figure class="absolute inset-0 w-full h-full hero-bg-overlay-light dark:hero-bg-overlay-dark z-[-1]"></figure>
   <video
-    class="w-full h-full absolute -top-[220px] left-0 scale-100 object-cover object-center z-[-1] min-h-[100vh] dark:hidden block opacity-40"
+    class="w-full h-full absolute inset-0 scale-100 object-cover object-center z-[-1] dark:hidden block opacity-40"
     autoplay=""
     muted=""
     loop=""
@@ -36,7 +36,7 @@ NiyoGen Hero Section
     Your browser does not support the video tag.
   </video>
   <video
-    class="w-full h-full absolute -top-[220px] left-0 scale-100 object-cover object-center z-[-1] min-h-[100vh] hidden dark:block opacity-30"
+    class="w-full h-full absolute inset-0 scale-100 object-cover object-center z-[-1] hidden dark:block opacity-30"
     autoplay=""
     muted=""
     loop=""
