@@ -1,49 +1,75 @@
 <!-- =========================
-Pricing / Contact CTA Section
+Get Started / Contact CTA Section
 ===========================-->
 <section
   id="pricing"
-  class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]"
+  class="dark:bg-background-6 py-14 md:py-16 lg:py-[88px] xl:py-[100px]"
 >
-  <div class="main-container">
-    <div class="text-center space-y-3 mb-14 md:mb-[70px]">
-      <span data-ns-animate data-delay="0.1" class="badge badge-green mb-3.5 md:mb-5">
-        Get Started
-      </span>
-      <h2 data-ns-animate data-delay="0.2">
-        Contact us for a
-        <span class="text-primary-500 inline-block">free demo</span>
-      </h2>
-      <p data-ns-animate data-delay="0.3" class="lg:max-w-[700px] mx-auto">
-        Industry partnerships and pricing available on request.
-      </p>
+  <div
+    class="w-[95%] 2xl:max-w-[1440px] mx-auto p-10 sm:p-12 lg:p-16 2xl:px-[100px] 2xl:py-[100px] bg-secondary rounded-4xl relative overflow-hidden z-0 max-[426px]:rounded-2xl max-[426px]:w-[90%] max-[426px]:py-10 max-[426px]:px-6"
+  >
+    <!-- Background Image -->
+    <div class="absolute inset-0 w-full h-full -z-10">
+      <img
+        src="images/home-page-2/integration-bg.png"
+        alt="Background"
+        class="w-full h-full object-cover"
+      />
     </div>
 
-    <div
-      data-ns-animate
-      data-delay="0.4"
-      class="max-w-[900px] mx-auto bg-white dark:bg-background-7 p-8 lg:p-12 rounded-[20px] shadow-3"
-    >
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
-        <div class="flex-1">
-          <h3 class="text-heading-5 font-normal mb-4">Ready to explore NiyoGen?</h3>
-          <p class="text-secondary/60 dark:text-accent/60 mb-6 lg:mb-0">
-            Tell us about your use case. We'll set up a tailored walkthrough and share pricing options that fit your needs.
-          </p>
-        </div>
-        <div class="flex flex-col sm:flex-row gap-4 lg:shrink-0">
-          <a
-            href="#contact"
-            class="btn btn-primary hover:btn-white-dark dark:hover:btn-white btn-lg"
-          >
-            <span>Contact us</span>
-          </a>
-          <a
-            href="#features"
-            class="btn btn-white hover:btn-primary dark:btn-white-dark btn-lg"
-          >
-            <span>Learn more</span>
-          </a>
+    <!-- Content -->
+    <div class="max-w-[900px] mx-auto">
+      <div class="text-center space-y-4 mb-14 lg:mb-20">
+        <span
+          data-ns-animate
+          data-delay="0.1"
+          class="badge badge-blur text-ns-yellow mb-5 max-[426px]:mb-3"
+        >
+          Get Started
+        </span>
+        <h2
+          data-ns-animate
+          data-delay="0.2"
+          class="text-accent max-[426px]:text-heading-5"
+        >
+          Contact us for a
+          <span class="text-ns-cyan inline-block">free demo</span>
+        </h2>
+        <p
+          data-ns-animate
+          data-delay="0.3"
+          class="lg:max-w-[700px] mx-auto text-accent/80 max-[426px]:text-tagline-2"
+        >
+          Industry partnerships and pricing available on request.
+        </p>
+      </div>
+
+      <div
+        data-ns-animate
+        data-delay="0.4"
+        class="bg-white/14 backdrop-blur-sm p-8 lg:p-12 rounded-[24px] border border-white/10"
+      >
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div class="flex-1 text-center lg:text-left">
+            <h3 class="text-heading-5 font-bold mb-4 text-accent">Ready to explore NiyoGen?</h3>
+            <p class="text-accent/80 mb-6 lg:mb-0 leading-relaxed">
+              Tell us about your use case. We'll set up a tailored walkthrough and share pricing options that fit your needs.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 lg:shrink-0">
+            <a
+              href="#contact"
+              class="btn btn-accent hover:btn-primary dark:btn-accent dark:hover:btn-primary btn-lg"
+            >
+              <span>Contact us</span>
+            </a>
+            <a
+              href="#features"
+              class="btn bg-white/20 hover:bg-white/30 text-accent border border-white/30 hover:border-white/50 btn-lg transition-all duration-300"
+            >
+              <span>Learn more</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
