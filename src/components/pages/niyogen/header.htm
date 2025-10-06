@@ -1,0 +1,82 @@
+<!-- =========================
+NiyoGen Custom Header - Enhanced UI
+===========================-->
+<header>
+  <div class="header-one opacity-0 rounded-full lp:!max-w-[1290px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] min-[500px]:max-w-[450px] min-[425px]:max-w-[375px] max-w-[320px] mx-auto w-full fixed left-1/2 -translate-x-1/2 z-50 top-5 flex items-center justify-between px-4 xl:px-5 py-2.5 {=$class} shadow-lg backdrop-blur-md" data-ns-animate data-direction="up" data-offset="100">
+    <!-- Logo with Icon -->
+    <div class="flex items-center gap-2 shrink-0">
+      <a href="./niyogen.html" class="flex items-center gap-2 group">
+        <!-- Icon -->
+        <div class="size-8 rounded-lg bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
+          <svg class="size-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <!-- Text -->
+        <span class="text-[18px] font-bold text-secondary dark:text-accent group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors duration-300 whitespace-nowrap">
+          NiyoGen
+        </span>
+      </a>
+    </div>
+
+    <!-- Get Started Button (Desktop) -->
+    <div class="flex items-center justify-center shrink-0">
+      <a href="#pricing" class="group relative inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold text-[15px] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden whitespace-nowrap">
+        <span class="relative z-10">Get started</span>
+        <svg class="size-4 relative z-10 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+        <span class="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="xl:hidden block">
+      <button class="nav-hamburger flex flex-col gap-[5px] size-11 bg-background-4 dark:bg-background-6 rounded-xl items-center justify-center cursor-pointer hover:bg-primary-500 dark:hover:bg-primary-500 transition-all duration-300 group shadow-md">
+        <span class="sr-only">Menu</span>
+        <span class="block w-5 h-0.5 bg-secondary dark:bg-accent group-hover:bg-white transition-colors duration-300"></span>
+        <span class="block w-5 h-0.5 bg-secondary dark:bg-accent group-hover:bg-white transition-colors duration-300"></span>
+        <span class="block w-5 h-0.5 bg-secondary dark:bg-accent group-hover:bg-white transition-colors duration-300"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu fixed top-0 left-0 w-full h-screen bg-background-2/95 dark:bg-background-6/95 backdrop-blur-xl z-40 -translate-x-full transition-transform duration-300 overflow-y-auto">
+    <div class="flex flex-col h-full">
+      <!-- Mobile Header -->
+      <div class="flex items-center justify-between p-6 border-b border-stroke-2 dark:border-stroke-6">
+        <a href="./niyogen.html" class="flex items-center gap-2.5">
+          <!-- Icon -->
+          <div class="size-9 rounded-xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-md">
+            <svg class="size-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <!-- Text -->
+          <span class="text-heading-6 font-bold text-secondary dark:text-accent">
+            NiyoGen
+          </span>
+        </a>
+        <button class="nav-close size-11 flex items-center justify-center rounded-xl bg-background-4 dark:bg-background-8 hover:bg-primary-500 dark:hover:bg-primary-500 transition-all duration-300 group shadow-md">
+          <svg class="size-5 text-secondary dark:text-accent group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="flex-1 p-6 flex items-center justify-center">
+        <!-- Mobile Get Started Button -->
+        <div class="w-full max-w-sm">
+          <a href="#pricing" class="btn btn-primary hover:btn-white-dark dark:hover:btn-white btn-lg w-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+            <span>Get started</span>
+            <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
