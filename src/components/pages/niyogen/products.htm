@@ -1,227 +1,295 @@
 <!-- =========================
-Products Overview Section
+Products Overview Section - Visual Journey Style
 ===========================-->
 <section
   id="products"
-  class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] bg-background-2 dark:bg-background-6"
+  class="relative pt-20 md:pt-[100px] lg:pt-[160px] xl:pt-[200px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] bg-background-3 dark:bg-background-6 max-sm:pt-10 max-sm:pb-10"
 >
-  <div class="main-container">
-    <div class="text-center space-y-3 mb-14 md:mb-[70px]">
-      <span data-ns-animate data-delay="0.1" class="badge badge-green-v2 mb-3.5 md:mb-5">
+  <div class="main-container flex flex-col gap-[70px]">
+    <div class="flex flex-col items-center text-center gap-y-4">
+      <span data-ns-animate data-delay="0.05" class="badge badge-green-v2 mb-3.5 md:mb-5">
         Product Overview
       </span>
-      <h2 data-ns-animate data-delay="0.2">
-        How NiyoGen helps you move
-        <span class="text-primary-500 inline-block">from idea to impact</span>
+      <h2 data-ns-animate data-delay="0.1" class="max-w-[750px] mx-auto max-sm:max-w-[320px]">
+        How NiyoGen helps you move <span class="text-primary-500">from idea to impact</span>
       </h2>
-      <p data-ns-animate data-delay="0.3" class="lg:max-w-[700px] mx-auto">
-        Build, evolve, and deploy AI agent workflows with confidence—from prototype to production.
+      <p data-ns-animate data-delay="0.2" class="max-w-[850px] max-sm:max-w-[300px]">
+        Build, evolve, and deploy AI agent workflows with confidence—from prototype to production. NiyoGen provides the complete platform for creating intelligent agent systems.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-      <!-- Product 1: FastGraph Swarm Builder -->
+    <div class="grid grid-cols-12 max-sm:gap-y-[42px] max-sm:gap-x-0 gap-[42px]">
+      <!-- Main Feature Card with Background -->
+      <div data-ns-animate data-delay="0.3" class="col-span-12 relative z-10">
+        <div class="absolute top-0 left-0 right-0 bottom-0 -z-10 rounded-[20px] overflow-hidden">
+          <img
+            src="images/home-page-2/about-bg.png"
+            alt="product overview background"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="max-sm:py-8 py-14 px-6 max-sm:px-5 md:px-11 grid max-sm:grid-cols-1 grid-cols-2 max-sm:gap-10 gap-5"
+        >
+          <div class="max-w-[500px] about-content">
+            <h5 class="text-accent mb-8 max-sm:text-heading-6">
+              Build swarms of AI agents from simple prompts and orchestrate workflows across your tools.
+            </h5>
+            <a href="#contact" class="btn btn-md btn-white hover:btn-white-dark">
+              <span>Get started</span>
+            </a>
+          </div>
+          <div>
+            <ul class="max-sm:space-y-3 space-y-5">
+              <li class="flex items-center max-sm:gap-2.5 gap-2">
+                <svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10.0002C0 4.47729 4.47717 0 10 0C15.5229 0 20.0001 4.47729 20.0001 10.0002C20.0001 15.523 15.5229 20.0003 10 20.0003C4.47717 20.0003 0 15.523 0 10.0002Z"
+                    fill="#FCFCFC"
+                    fill-opacity="0.17"
+                  />
+                  <path
+                    d="M14.125 7.375L8.875 12.6248L6.25 10"
+                    stroke=""
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-accent"
+                  />
+                </svg>
+                <span class="text-accent max-sm:text-tagline-2"
+                  >No-code agent creation from natural language prompts</span
+                >
+              </li>
+              <li class="flex items-center max-sm:gap-2.5 gap-2">
+                <svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10.0002C0 4.47729 4.47717 0 10 0C15.5229 0 20.0001 4.47729 20.0001 10.0002C20.0001 15.523 15.5229 20.0003 10 20.0003C4.47717 20.0003 0 15.523 0 10.0002Z"
+                    fill="#FCFCFC"
+                    fill-opacity="0.17"
+                  />
+                  <path
+                    d="M14.125 7.375L8.875 12.6248L6.25 10"
+                    stroke=""
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-accent"
+                  />
+                </svg>
+                <span class="text-accent max-sm:text-tagline-2"
+                  >Multi-agent orchestration with operational reliability</span
+                >
+              </li>
+              <li class="flex items-center max-sm:gap-2.5 gap-2">
+                <svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10.0002C0 4.47729 4.47717 0 10 0C15.5229 0 20.0001 4.47729 20.0001 10.0002C20.0001 15.523 15.5229 20.0003 10 20.0003C4.47717 20.0003 0 15.523 0 10.0002Z"
+                    fill="#FCFCFC"
+                    fill-opacity="0.17"
+                  />
+                  <path
+                    d="M14.125 7.375L8.875 12.6248L6.25 10"
+                    stroke=""
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-accent"
+                  />
+                </svg>
+                <span class="text-accent max-sm:text-tagline-2"
+                  >Seamless integration with your existing tools and systems</span
+                >
+              </li>
+              <li class="flex items-center max-sm:gap-2.5 gap-2">
+                <svg
+                  class="size-5 shrink-0"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 10.0002C0 4.47729 4.47717 0 10 0C15.5229 0 20.0001 4.47729 20.0001 10.0002C20.0001 15.523 15.5229 20.0003 10 20.0003C4.47717 20.0003 0 15.523 0 10.0002Z"
+                    fill="#FCFCFC"
+                    fill-opacity="0.17"
+                  />
+                  <path
+                    d="M14.125 7.375L8.875 12.6248L6.25 10"
+                    stroke=""
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="stroke-accent"
+                  />
+                </svg>
+                <span class="text-accent max-sm:text-tagline-2"
+                  >Production-ready workflows with retries and timeouts</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FastGraph Swarm Builder Card -->
       <div
         data-ns-animate
         data-delay="0.4"
-        class="bg-white dark:bg-background-7 p-8 lg:p-10 rounded-[20px] hover:shadow-3 transition-all duration-300"
+        class="max-md:col-span-12 col-span-6 bg-white dark:bg-background-5 rounded-[20px]"
       >
-        <div class="flex items-start gap-5 mb-6">
-          <div class="shrink-0 size-16 rounded-2xl bg-primary-100 dark:bg-primary-500/10 flex items-center justify-center text-4xl">
-            🕸️
+        <div class="flex items-center bg-secondary dark:bg-background-9 rounded-[12px] p-5 sm:p-8">
+          <div class="flex flex-col gap-4 flex-2/3">
+            <div class="size-16 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center text-4xl shadow-lg">
+              🕸️
+            </div>
+            <p class="text-accent font-semibold text-heading-6">
+              FastGraph <br class="hidden sm:block" />
+              Swarm Builder
+            </p>
           </div>
-          <div>
-            <h3 class="mb-3 font-normal text-heading-5">FastGraph Swarm Builder</h3>
-            <p class="text-secondary/60 dark:text-accent/60">
-              Build swarms of agents from simple prompts and orchestrate multi‑agent workflows across your tools.
+
+          <div class="flex-1/3 flex flex-col items-center justify-end ml-auto">
+            <div class="relative w-fit">
+              <svg
+                width="114"
+                height="113"
+                viewBox="0 0 114 113"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="57"
+                  cy="56.5"
+                  r="50"
+                  stroke=""
+                  stroke-width="13.68"
+                  fill="none"
+                  stroke-opacity="0.2"
+                  class="stroke-accent"
+                />
+                <circle
+                  cx="57"
+                  cy="56.5"
+                  r="50"
+                  stroke=""
+                  stroke-width="13.68"
+                  fill="none"
+                  class="stroke-primary-500"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <h6
+                class="flex items-center text-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                <span
+                  data-counter
+                  data-number="100"
+                  data-speed="1500"
+                  data-interval="10"
+                  data-rooms="3"
+                  >100</span
+                >
+                <span class="font-inherit"> % </span>
+              </h6>
+            </div>
+
+            <p
+              class="text-secondary bg-ns-green rounded-[12px] py-2 px-4 md:px-4 lg:px-6 -mt-6 relative z-10"
+            >
+              <span>No Code</span>
             </p>
           </div>
         </div>
-        <ul class="space-y-3 mb-6">
-          <li class="flex items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="shrink-0"
-            >
-              <rect
-                width="20"
-                height="20"
-                rx="10"
-                fill=""
-                class="fill-primary-500"
-              />
-              <path
-                d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
-                fill=""
-                class="fill-white"
-              />
-            </svg>
-            <span class="text-secondary dark:text-accent/80 font-normal text-tagline-1">
-              No-code agent creation
-            </span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="shrink-0"
-            >
-              <rect
-                width="20"
-                height="20"
-                rx="10"
-                fill=""
-                class="fill-primary-500"
-              />
-              <path
-                d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
-                fill=""
-                class="fill-white"
-              />
-            </svg>
-            <span class="text-secondary dark:text-accent/80 font-normal text-tagline-1">
-              Multi-agent orchestration
-            </span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="shrink-0"
-            >
-              <rect
-                width="20"
-                height="20"
-                rx="10"
-                fill=""
-                class="fill-primary-500"
-              />
-              <path
-                d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
-                fill=""
-                class="fill-white"
-              />
-            </svg>
-            <span class="text-secondary dark:text-accent/80 font-normal text-tagline-1">
-              Operational reliability
-            </span>
-          </li>
-        </ul>
-        <a href="#contact" class="btn btn-ghost hover:btn-primary">
-          <span>Learn more</span>
-        </a>
+        <div
+          class="text-left w-full px-6 lg:px-8 py-8"
+        >
+          <h5 class="mb-2 max-lg:text-heading-6">Prompt-driven agent orchestration</h5>
+          <p class="max-lg:text-tagline-2">
+            Build swarms of agents from simple prompts and orchestrate multi‑agent workflows across your tools. No coding required.
+          </p>
+        </div>
       </div>
 
-      <!-- Product 2: EvolSpace -->
+      <!-- EvolSpace Card -->
       <div
         data-ns-animate
         data-delay="0.5"
-        class="bg-white dark:bg-background-7 p-8 lg:p-10 rounded-[20px] hover:shadow-3 transition-all duration-300"
+        class="max-md:col-span-12 col-span-6 bg-white dark:bg-background-5 rounded-[20px]"
       >
-        <div class="flex items-start gap-5 mb-6">
-          <div class="shrink-0 size-16 rounded-2xl bg-primary-100 dark:bg-primary-500/10 flex items-center justify-center text-4xl">
-            🧪
+        <div class="bg-secondary dark:bg-background-9 rounded-xl p-5 sm:p-8">
+          <div class="flex items-center gap-4 mb-[46px]">
+            <figure
+              class="inline-flex size-14 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 items-center justify-center text-4xl shadow-lg"
+            >
+              🧪
+            </figure>
+            <div>
+              <h5 class="text-accent max-sm:text-heading-6">EvolSpace</h5>
+              <p class="text-accent/60 max-sm:text-tagline-2">Agent Evolution Platform</p>
+            </div>
           </div>
-          <div>
-            <h3 class="mb-3 font-normal text-heading-5">EvolSpace</h3>
-            <p class="text-secondary/60 dark:text-accent/60">
-              Agent Evolution & Guardrailed Assistants—create and evolve agents, run evaluations, and launch policy‑aware assistants with approvals and audit trails.
-            </p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2.5">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_244_14392)">
+                  <path
+                    d="M20 2.5C20.552 2.5 21 2.948 21 3.5V7.257L19 9.257V4.5H5V20.5H19V17.742L21 15.742V21.5C21 22.052 20.552 22.5 20 22.5H4C3.448 22.5 3 22.052 3 21.5V3.5C3 2.948 3.448 2.5 4 2.5H20ZM21.778 9.308L23.192 10.722L15.414 18.5L13.998 18.498L14 17.086L21.778 9.308ZM13 12.5V14.5H8V12.5H13ZM16 8.5V10.5H8V8.5H16Z"
+                    fill=""
+                    class="fill-ns-green"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_244_14392">
+                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="text-accent/60 text-tagline-2 font-medium">Guardrails</p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.34462 13.401L13.2849 15.8974C13.7886 16.2165 14.4139 15.7419 14.2644 15.154L13.126 10.6756C13.0939 10.5509 13.0977 10.4197 13.137 10.297C13.1762 10.1743 13.2492 10.0652 13.3477 9.98222L16.8811 7.04132C17.3453 6.6549 17.1057 5.88439 16.5092 5.84567L11.8949 5.5462C11.7706 5.53732 11.6514 5.49332 11.5511 5.41931C11.4509 5.34531 11.3737 5.24435 11.3286 5.12819L9.60765 0.794357C9.56087 0.671064 9.47769 0.564919 9.36915 0.490017C9.26062 0.415115 9.13187 0.375 9 0.375C8.86813 0.375 8.73938 0.415115 8.63085 0.490017C8.52232 0.564919 8.43914 0.671064 8.39236 0.794357L6.6714 5.12819C6.6263 5.24435 6.54914 5.34531 6.4489 5.41931C6.34865 5.49332 6.22944 5.53732 6.10515 5.5462L1.49078 5.84567C0.894294 5.88439 0.654664 6.6549 1.11894 7.04132L4.65232 9.98222C4.75079 10.0652 4.82383 10.1743 4.86305 10.297C4.90226 10.4197 4.90606 10.5509 4.874 10.6756L3.81824 14.8288C3.63889 15.5343 4.38929 16.1038 4.99369 15.7209L8.65539 13.401C8.75837 13.3354 8.87792 13.3006 9 13.3006C9.12208 13.3006 9.24163 13.3354 9.34462 13.401Z"
+                  fill=""
+                  class="fill-ns-green"
+                />
+              </svg>
+
+              <p class="text-accent/60 text-tagline-2 font-medium">Audit Trails</p>
+            </div>
           </div>
         </div>
-        <ul class="space-y-3 mb-6">
-          <li class="flex items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="shrink-0"
-            >
-              <rect
-                width="20"
-                height="20"
-                rx="10"
-                fill=""
-                class="fill-primary-500"
-              />
-              <path
-                d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
-                fill=""
-                class="fill-white"
-              />
-            </svg>
-            <span class="text-secondary dark:text-accent/80 font-normal text-tagline-1">
-              Agent evolution & evaluation
-            </span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="shrink-0"
-            >
-              <rect
-                width="20"
-                height="20"
-                rx="10"
-                fill=""
-                class="fill-primary-500"
-              />
-              <path
-                d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
-                fill=""
-                class="fill-white"
-              />
-            </svg>
-            <span class="text-secondary dark:text-accent/80 font-normal text-tagline-1">
-              Guardrails & policy control
-            </span>
-          </li>
-          <li class="flex items-center gap-2.5">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="shrink-0"
-            >
-              <rect
-                width="20"
-                height="20"
-                rx="10"
-                fill=""
-                class="fill-primary-500"
-              />
-              <path
-                d="M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z"
-                fill=""
-                class="fill-white"
-              />
-            </svg>
-            <span class="text-secondary dark:text-accent/80 font-normal text-tagline-1">
-              Approvals & audit trails
-            </span>
-          </li>
-        </ul>
-        <a href="#contact" class="btn btn-ghost hover:btn-primary">
-          <span>Learn more</span>
-        </a>
+        <div
+          class="text-left w-full px-6 lg:px-8 py-8"
+        >
+          <h5 class="mb-2 max-lg:text-heading-6">Evolution with safety controls</h5>
+          <p class="max-lg:text-tagline-2">
+            Create and evolve agents, run evaluations, and launch policy‑aware assistants with approvals and audit trails. Without managing infrastructure.
+          </p>
+        </div>
       </div>
     </div>
   </div>
