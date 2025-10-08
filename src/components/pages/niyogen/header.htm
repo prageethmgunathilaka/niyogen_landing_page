@@ -19,6 +19,15 @@ NiyoGen Custom Header - Enhanced UI
       </a>
     </div>
 
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden xl:flex items-center gap-8 flex-1 justify-center">
+      <a href="#products" class="text-[15px] font-medium text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 whitespace-nowrap">Products</a>
+      <a href="#features" class="text-[15px] font-medium text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 whitespace-nowrap">Features</a>
+      <a href="#how-it-works" class="text-[15px] font-medium text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 whitespace-nowrap">How It Works</a>
+      <a href="#pricing" class="text-[15px] font-medium text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 whitespace-nowrap">Pricing</a>
+      <a href="#faq" class="text-[15px] font-medium text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 whitespace-nowrap">FAQ</a>
+    </nav>
+
     <!-- Get Started Button (Desktop) -->
     <div class="flex items-center justify-center shrink-0">
       <a href="./niyogen-register.html" class="group relative inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold text-[15px] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden whitespace-nowrap">
@@ -66,9 +75,16 @@ NiyoGen Custom Header - Enhanced UI
       </div>
 
       <!-- Mobile Navigation -->
-      <nav class="flex-1 p-6 flex items-center justify-center">
+      <nav class="flex-1 p-6">
+        <ul class="space-y-4 mb-8">
+          <li><a href="#products" class="nav-close block text-heading-6 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 py-3">Products</a></li>
+          <li><a href="#features" class="nav-close block text-heading-6 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 py-3">Features</a></li>
+          <li><a href="#how-it-works" class="nav-close block text-heading-6 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 py-3">How It Works</a></li>
+          <li><a href="#pricing" class="nav-close block text-heading-6 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 py-3">Pricing</a></li>
+          <li><a href="#faq" class="nav-close block text-heading-6 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300 py-3">FAQ</a></li>
+        </ul>
         <!-- Mobile Get Started Button -->
-        <div class="w-full max-w-sm">
+        <div class="w-full">
           <a href="./niyogen-register.html" class="btn btn-primary hover:btn-white-dark dark:hover:btn-white btn-lg w-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
             <span>Get started</span>
             <svg class="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
