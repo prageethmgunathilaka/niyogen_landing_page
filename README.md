@@ -1,4 +1,15 @@
-# Next SaaS HTML Template / http://localhost:5173/niyogen.html/ hero,Product Overview,Features,How It Works,Get Started, fnq,
+# Next SaaS HTML Template 
+# More Info: http://localhost:5173/niyogen.html/ hero,Product Overview,Features,How It Works,Get Started, fnq,
+# http://localhost:5173/home-page-02.html
+
+# Change the existing origin to point to the new repository
+git remote set-url origin https://github.com/prageethmgunathilaka/niyogen_landing_page.git
+
+# Verify the change
+git remote -v
+
+# Now push your code
+git push -u origin main
 
 A modern, responsive HTML template collection for SaaS businesses, startups, and web applications. This project provides 35+ beautifully designed home page variations and comprehensive inner pages including authentication, pricing, blog, contact, and more.
 
