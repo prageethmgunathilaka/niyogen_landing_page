@@ -1,0 +1,111 @@
+<!-- =========================
+Contact Modal
+===========================-->
+<dialog class="modal-overlay contact-modal-overlay fixed top-0 left-0 h-full w-full bg-black/80 backdrop-blur-sm !z-[9999] modal-close place-items-center">
+  <div
+    class="modal-content contact-modal-content max-w-[600px] w-[90%] max-h-[90vh] overflow-y-auto rounded-[20px] md:rounded-3xl bg-white dark:bg-background-6 shadow-2xl"
+  >
+    <div class="p-6 md:p-8 lg:p-10">
+      <div class="flex items-start justify-between mb-2">
+        <h3 class="text-heading-6 md:text-heading-5 font-semibold text-secondary dark:text-accent">
+          Contact Us
+        </h3>
+        <button
+          class="modal-close-btn contact-modal-close-btn flex items-center justify-center size-9 bg-background-2 dark:bg-background-8 hover:bg-primary-500 dark:hover:bg-primary-500 text-secondary dark:text-accent hover:text-white rounded-full cursor-pointer transition-all duration-300 flex-shrink-0"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="size-5"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <p class="text-tagline-2 text-secondary/60 dark:text-accent/60 mb-6 md:mb-8">
+        Fill out the form below and we'll get back to you as soon as possible.
+      </p>
+
+      <form action="/index.html" method="POST" class="space-y-5">
+        <!-- Name field -->
+        <fieldset class="w-full">
+          <label
+            for="contact-name"
+            class="block text-tagline-2 text-secondary dark:text-accent font-medium mb-2"
+          >
+            Full Name
+          </label>
+          <input
+            type="text"
+            name="fullName"
+            id="contact-name"
+            required
+            placeholder="Enter your name"
+            class="rounded-full placeholder:text-tagline-2 border border-stroke-3 dark:border-stroke-6 bg-background-1 dark:bg-background-5 dark:placeholder:text-accent/50 placeholder:text-secondary/50 dark:text-accent text-secondary w-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder:font-normal font-normal transition-all duration-200"
+            aria-required="true"
+          />
+        </fieldset>
+
+        <!-- Email field -->
+        <fieldset class="w-full">
+          <label
+            for="contact-email"
+            class="block text-tagline-2 text-secondary dark:text-accent font-medium mb-2"
+          >
+            Email Address
+          </label>
+          <input
+            type="email"
+            required
+            name="emailAddress"
+            id="contact-email"
+            placeholder="Enter your email"
+            class="rounded-full placeholder:text-tagline-2 border border-stroke-3 dark:border-stroke-6 bg-background-1 dark:bg-background-5 dark:placeholder:text-accent/50 placeholder:text-secondary/50 dark:text-accent text-secondary w-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder:font-normal font-normal transition-all duration-200"
+            aria-required="true"
+          />
+        </fieldset>
+
+        <!-- Message field -->
+        <fieldset class="w-full">
+          <label
+            for="contact-message"
+            class="block text-tagline-2 text-secondary dark:text-accent font-medium mb-2"
+          >
+            Message
+          </label>
+          <textarea
+            name="message"
+            id="contact-message"
+            required
+            placeholder="Tell us what you're interested in..."
+            rows="4"
+            class="rounded-2xl placeholder:text-tagline-2 border border-stroke-3 dark:border-stroke-6 bg-background-1 dark:bg-background-5 dark:placeholder:text-accent/50 placeholder:text-secondary/50 dark:text-accent text-secondary w-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder:font-normal font-normal resize-none transition-all duration-200"
+            aria-required="true"
+          ></textarea>
+        </fieldset>
+
+        <!-- Submit button -->
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg flex-1 order-1 sm:order-1"
+          >
+            <span>Send message</span>
+          </button>
+          <button
+            type="button"
+            class="btn btn-white-dark hover:btn-white btn-lg flex-1 order-2 sm:order-2 contact-modal-close-btn-secondary border border-stroke-3 dark:border-stroke-6"
+          >
+            <span>Cancel</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</dialog>
+
