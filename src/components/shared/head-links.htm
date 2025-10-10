@@ -65,6 +65,16 @@ Head links - SEO Optimized
 <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
+<!-- Performance & Security Headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="X-Frame-Options" content="DENY" />
+<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<!-- Preload Critical Resources -->
+<link rel="preload" href="./src/styles/main.css" as="style" />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" as="style" />
+
 <!-- Fonts -->
 <link
   href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
@@ -126,5 +136,121 @@ Head links - SEO Optimized
     "ratingValue": "4.8",
     "ratingCount": "150"
   }
+}
+</script>
+
+<!-- Breadcrumb Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://niyogen.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Agent Platform",
+      "item": "https://niyogen.com/#features"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "FastGraph Swarm Builder",
+      "item": "https://niyogen.com/#products"
+    }
+  ]
+}
+</script>
+
+<!-- FAQ Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is FastGraph Swarm Builder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's a no‑code way to build swarms of LLM agents from plain‑language prompts, orchestrate them into workflows, and connect them to the tools you already use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can non‑technical users create and evolve agents?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Business users can create agents with prompts and iterate using guided evaluation loops—no code required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do guardrails and approvals work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can define policies (allow/deny, PII controls, tool permissions) and require approvals for sensitive actions. All changes are auditable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What integrations are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We focus on practical connectors: CRMs, ticketing, monitoring, data sources, and model providers. Tell us your top tools—we'll prioritize them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we go from demo to production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with a guided demo, then enable projects, approvals, and monitoring. Self‑host and enterprise options are planned; contact us for timelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is EvolSpace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EvolSpace is our managed Agent Evolution service—run evaluations, compare outcomes, and apply guardrail‑aware updates without managing infra."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Article Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "NiyoGen - FastGraph Swarm Builder & EvolSpace | AI Agent Platform",
+  "description": "Build swarms of AI agents from simple prompts with NiyoGen's FastGraph Swarm Builder. Create multi-agent workflows, integrate external systems, and evolve into industrial pipelines with built-in guardrails.",
+  "image": "https://niyogen.com/images/og-image.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "NiyoGen"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "NiyoGen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://niyogen.com/images/logo.svg"
+    }
+  },
+  "datePublished": "2024-12-19",
+  "dateModified": "2024-12-19",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://niyogen.com/"
+  },
+  "keywords": "AI agents, swarm builder, multi-agent workflows, AI platform, machine learning, automation, FastGraph, EvolSpace, artificial intelligence, agent orchestration"
 }
 </script>
