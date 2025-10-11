@@ -31,11 +31,26 @@ NiyoGen Hero Section
     loop=""
     playsinline=""
   >
-    <source src="/video/openart-video.mp4" type="video/mp4" />
+    <source src="./video/openart-video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
   <div class="relative sm:pt-[220px] pt-[140px] pb-[140px] max-[641px]:pb-16 max-[426px]:pb-10 z-10">
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="main-container mb-8">
+      <ol class="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
+        <li>
+          <a href="./index.html" class="hover:text-primary-500 transition-colors">Home</a>
+        </li>
+        <li class="flex items-center">
+          <svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="text-primary-500 font-medium">AI Agent Platform</span>
+        </li>
+      </ol>
+    </nav>
+    
     <!-- Content -->
     <div class="main-container flex flex-col items-center text-center z-10">
       <!-- <span data-ns-animate data-delay="0.1" class="badge badge-yellow mb-5">
@@ -46,7 +61,7 @@ NiyoGen Hero Section
         data-delay="0.2"
         class="font-medium max-[426px]:mb-2.5 mb-4 max-[426px]:text-heading-5 max-sm:text-heading-4 max-sm:max-w-[450px]"
       >
-        Build swarms of <span class="text-primary-500">Agents</span>
+        Build swarms of <span class="text-primary-500">AI Agents</span>
         <br class="hidden md:block" />
         from simple prompts
       </h1>
@@ -56,7 +71,7 @@ NiyoGen Hero Section
         <ul class="flex flex-col md:flex-row gap-4 mb-7 md:mb-14 max-md:w-full">
           <li data-ns-animate data-delay="0.3" data-direction="left" data-offset="50">
             <a
-              href="./niyogen-register.html"
+              href="#contact"
               class="btn max-md:btn-md w-full md:w-auto max-md:mx-auto btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent"
             >
               <span>Get started</span>
