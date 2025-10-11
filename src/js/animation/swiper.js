@@ -3,6 +3,11 @@ Swiper sliders js
 =========================== */
 
 function initReviewsSwiper() {
+  // Check if Swiper is available
+  if (typeof Swiper === 'undefined') {
+    console.error('Swiper is not loaded.');
+    return;
+  }
   const reviewsSwiper = new Swiper('.reviews-swiper', {
     slidesPerView: 1,
     padding: 10,
@@ -273,4 +278,11 @@ function initReviewsSwiper() {
   };
 }
 
-initReviewsSwiper();
+// Initialize when DOM is ready and Swiper is loaded
+if (typeof window !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initReviewsSwiper);
+  } else {
+    initReviewsSwiper();
+  }
+}
