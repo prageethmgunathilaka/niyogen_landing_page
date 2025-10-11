@@ -57,8 +57,10 @@ class NavigationMenu {
 
     // Hide all menus when clicking outside
     document.addEventListener('click', (e) => {
-      if (!e.target.closest('.nav-item') && !e.target.closest('.mega-menu, .dropdown-menu')) {
-        this.hideAllMenus();
+      if (e.target && typeof e.target.closest === 'function') {
+        if (!e.target.closest('.nav-item') && !e.target.closest('.mega-menu, .dropdown-menu')) {
+          this.hideAllMenus();
+        }
       }
     });
 
@@ -76,6 +78,7 @@ class NavigationMenu {
         const relatedTarget = e.relatedTarget;
         const isMovingToMenu =
           relatedTarget &&
+          typeof relatedTarget.closest === 'function' &&
           (relatedTarget.closest('.mega-menu') || relatedTarget.closest('.dropdown-menu'));
 
         if (!isMovingToMenu) {
@@ -89,6 +92,7 @@ class NavigationMenu {
       'mouseenter',
       (e) => {
         if (
+          e.target && typeof e.target.closest === 'function' &&
           e.target.closest('.mega-menu, .dropdown-menu, .mega-menu-bridge, .dropdown-menu-bridge')
         ) {
           this.isMouseInMenu = true;
@@ -102,6 +106,7 @@ class NavigationMenu {
       'mouseleave',
       (e) => {
         if (
+          e.target && typeof e.target.closest === 'function' &&
           e.target.closest('.mega-menu, .dropdown-menu, .mega-menu-bridge, .dropdown-menu-bridge')
         ) {
           this.isMouseInMenu = false;
@@ -109,6 +114,7 @@ class NavigationMenu {
           const relatedTarget = e.relatedTarget;
           const isMovingToHeader =
             relatedTarget &&
+            typeof relatedTarget.closest === 'function' &&
             (relatedTarget.closest('header') ||
               relatedTarget.closest('.mega-menu') ||
               relatedTarget.closest('.dropdown-menu') ||
