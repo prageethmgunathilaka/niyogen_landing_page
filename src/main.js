@@ -14,6 +14,7 @@ import './js/animation/svg-draw';
 import './js/animation/swiper';
 import './js/animation/tab';
 import './js/animation/tab-filter';
+import './js/utils/email-handler';
 import './js/common/common';
 import './js/common/navigation-menu';
 import './js/common/parallax-effect';

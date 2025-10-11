@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Test - NiyoGen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #3B82F6;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+        }
+        .test-button:hover {
+            background: #2563EB;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        .success { background: #D1FAE5; color: #065F46; border: 1px solid #A7F3D0; }
+        .error { background: #FEE2E2; color: #991B1B; border: 1px solid #FECACA; }
+        .info { background: #DBEAFE; color: #1E40AF; border: 1px solid #BFDBFE; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 Contact Form Test</h1>
+        <p>This page tests the contact form functionality locally before pushing to production.</p>
+        
+        <h2>Test Steps:</h2>
+        <ol>
+            <li>Click "Open Contact Modal" to test the modal functionality</li>
+            <li>Fill out the form with test data</li>
+            <li>Submit the form to test email functionality</li>
+            <li>Check the console for any JavaScript errors</li>
+        </ol>
+
+        <div>
+            <button class="test-button" onclick="openContactModal()">Open Contact Modal</button>
+            <button class="test-button" onclick="testEmailJS()">Test EmailJS</button>
+            <button class="test-button" onclick="testFallback()">Test Fallback</button>
+        </div>
+
+        <div id="status"></div>
+
+        <h2>Expected Behavior:</h2>
+        <ul>
+            <li><strong>EmailJS Not Configured:</strong> Should show fallback message and open mailto link</li>
+            <li><strong>EmailJS Configured:</strong> Should send email directly to itranga@gmail.com</li>
+            <li><strong>Form Validation:</strong> Should validate required fields and email format</li>
+            <li><strong>Success Message:</strong> Should show success message and close modal</li>
+        </ul>
+
+        <h2>Console Output:</h2>
+        <div id="console-output" style="background: #1F2937; color: #F9FAFB; padding: 15px; border-radius: 6px; font-family: monospace; font-size: 12px; max-height: 200px; overflow-y: auto;"></div>
+    </div>
+
+    <!-- Include the built files -->
+    <link rel="stylesheet" href="dist/assets/main.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="dist/assets/main.js"></script>
+
+    <script>
+        // Override console.log to show in our test page
+        const originalLog = console.log;
+        const originalError = console.error;
+        const consoleOutput = document.getElementById('console-output');
+        
+        function addToConsole(message, type = 'log') {
+            const div = document.createElement('div');
+            div.style.color = type === 'error' ? '#F87171' : '#F9FAFB';
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            consoleOutput.appendChild(div);
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+        }
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addToConsole(args.join(' '), 'log');
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addToConsole(args.join(' '), 'error');
+        };
+
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.className = `status ${type}`;
+            status.innerHTML = message;
+        }
+
+        function openContactModal() {
+            console.log('Opening contact modal...');
+            const modalTrigger = document.querySelector('.contact-modal-trigger');
+            if (modalTrigger) {
+                modalTrigger.click();
+                showStatus('✅ Contact modal opened successfully', 'success');
+            } else {
+                showStatus('❌ Contact modal trigger not found', 'error');
+            }
+        }
+
+        function testEmailJS() {
+            console.log('Testing EmailJS availability...');
+            if (typeof emailjs !== 'undefined') {
+                showStatus('✅ EmailJS is loaded and available', 'success');
+            } else {
+                showStatus('❌ EmailJS is not loaded', 'error');
+            }
+        }
+
+        function testFallback() {
+            console.log('Testing fallback email functionality...');
+            const testData = {
+                fullName: 'Test User',
+                email: 'test@example.com',
+                message: 'This is a test message from the contact form test page.',
+                type: 'test'
+            };
+            
+            // Simulate the fallback behavior
+            const subject = encodeURIComponent('Contact Form - NiyoGen Website');
+            const body = encodeURIComponent(`
+Name: ${testData.fullName}
+Email: ${testData.email}
+Form Type: ${testData.type}
+
+Message:
+${testData.message}
+
+---
+This message was sent from the NiyoGen website contact form.
+            `);
+            
+            const mailtoLink = `mailto:itranga@gmail.com?subject=${subject}&body=${body}`;
+            console.log('Generated mailto link:', mailtoLink);
+            showStatus('✅ Fallback mailto link generated successfully', 'success');
+        }
+
+        // Show initial status
+        showStatus('Ready to test contact form functionality', 'info');
+        console.log('Contact form test page loaded');
+    </script>
+</body>
+</html>
