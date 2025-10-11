@@ -8,8 +8,9 @@ const EMAILJS_SERVICE_ID = 'service_4rg5d3a'; // Your actual service ID
 const EMAILJS_TEMPLATE_ID = 'template_mych6qk'; // Your actual template ID
 const EMAILJS_PUBLIC_KEY = 'lab07QQNToM0JnxNA'; // Your actual public key
 
-// Fallback email address
-const FALLBACK_EMAIL = 'itranga@gmail.com';
+// Email addresses
+const PRIMARY_EMAIL = 'itranga@gmail.com';
+const CC_EMAIL = 'api@niyogen.com';
 
 // Initialize EmailJS
 (function() {
@@ -44,6 +45,7 @@ class EmailHandler {
             fullName: form.querySelector('[name="fullName"]')?.value,
             email: form.querySelector('[name="emailAddress"]')?.value,
             message: form.querySelector('[name="message"]')?.value,
+            subject: form.querySelector('[name="subject"]')?.value || 'Contact Form - NiyoGen Website',
             type: formType
         };
 
@@ -101,10 +103,11 @@ class EmailHandler {
         try {
             // Prepare email template parameters
             const templateParams = {
-                to_email: FALLBACK_EMAIL,
+                to_email: PRIMARY_EMAIL,
+                cc_email: CC_EMAIL,
                 from_name: formData.fullName,
                 from_email: formData.email,
-                subject: 'Contact Form - NiyoGen Website',
+                subject: formData.subject,
                 message: formData.message,
                 form_type: formData.type,
                 reply_to: formData.email
@@ -130,10 +133,11 @@ class EmailHandler {
 
     sendEmailFallback(formData) {
         // Create mailto link as fallback
-        const subject = encodeURIComponent('Contact Form - NiyoGen Website');
+        const subject = encodeURIComponent(formData.subject);
         const body = encodeURIComponent(`
 Name: ${formData.fullName}
 Email: ${formData.email}
+Subject: ${formData.subject}
 Form Type: ${formData.type}
 
 Message:
@@ -143,7 +147,7 @@ ${formData.message}
 This message was sent from the NiyoGen website contact form.
         `);
 
-        const mailtoLink = `mailto:${FALLBACK_EMAIL}?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:${PRIMARY_EMAIL}?cc=${CC_EMAIL}&subject=${subject}&body=${body}`;
         
         // Open mailto link
         window.open(mailtoLink, '_blank');
