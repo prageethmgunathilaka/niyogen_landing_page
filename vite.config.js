@@ -22,10 +22,19 @@ const jsToBottomNoModule = () => {
   return {
     name: 'no-attribute',
     transformIndexHtml(html) {
+      // Remove type="module" and crossorigin attributes
       html = html.replace(`type="module" crossorigin`, '');
-      let scriptTag = html.match(/<script[^>]*>(.*?)<\/script[^>]*>/)[0];
-      html = html.replace(scriptTag, '');
-      html = html.replace('<!-- SCRIPT -->', scriptTag);
+      
+      // Find and remove script tag from head
+      let scriptTag = html.match(/<script[^>]*src="[^"]*main\.js"[^>]*><\/script>/);
+      if (scriptTag) {
+        scriptTag = scriptTag[0];
+        html = html.replace(scriptTag, '');
+        
+        // Add script tag before closing body tag
+        html = html.replace('</body>', `  ${scriptTag}\n</body>`);
+      }
+      
       return html;
     },
   };
