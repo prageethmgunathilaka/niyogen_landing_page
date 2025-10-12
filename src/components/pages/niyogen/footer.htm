@@ -77,16 +77,10 @@ Footer v1 - NiyoGen (No Theme Toggle)
             <p class="sm:text-heading-6 text-tagline-1 font-normal text-primary-50">Company</p>
             <ul class="sm:space-y-5 space-y-3">
               <li>
-                <a href="./our-team-page-01.html" class="footer-link"> About Us </a>
+                <a href="#" class="footer-link"> About Us </a>
               </li>
               <li>
-                <a href="./career-page.html" class="footer-link"> Career </a>
-              </li>
-              <li>
-                <a href="./case-study-page.html" class="footer-link"> Case Studies </a>
-              </li>
-              <li>
-                <a href="./contact-us-page.html" class="footer-link"> Contact Us </a>
+                <a href="#" class="footer-link footer-contact-trigger"> Contact Us </a>
               </li>
             </ul>
           </div>
@@ -96,16 +90,7 @@ Footer v1 - NiyoGen (No Theme Toggle)
             <p class="sm:text-heading-6 text-tagline-1 font-normal text-primary-50">Support</p>
             <ul class="sm:space-y-5 space-y-3">
               <li>
-                <a href="./faq-page.html" class="footer-link"> FAQ </a>
-              </li>
-              <li>
-                <a href="./documentation-page.html" class="footer-link"> Documentation </a>
-              </li>
-              <li>
-                <a href="./learn-page.html" class="footer-link"> Tutorial </a>
-              </li>
-              <li>
-                <a href="./support-page.html" class="footer-link"> Support </a>
+                <a href="./index.html#faq" class="footer-link"> FAQ </a>
               </li>
             </ul>
           </div>
@@ -117,19 +102,10 @@ Footer v1 - NiyoGen (No Theme Toggle)
             </p>
             <ul class="sm:space-y-5 space-y-3">
               <li>
-                <a href="./terms-conditions-page.html" class="footer-link"> Terms & Conditions </a>
+                <a href="./niyogen-terms.html" class="footer-link"> Terms & Conditions </a>
               </li>
               <li>
-                <a href="./privacy-page.html" class="footer-link"> Privacy Policy </a>
-              </li>
-              <li>
-                <a href="./refund-policy-page.html" class="footer-link"> Refund Policy </a>
-              </li>
-              <li>
-                <a href="./gdpr-page.html" class="footer-link"> GDPR Compliance </a>
-              </li>
-              <li>
-                <a href="./affiliate-policy-page.html" class="footer-link"> Affiliate Policy </a>
+                <a href="./niyogen-privacy.html" class="footer-link"> Privacy Policy </a>
               </li>
             </ul>
           </div>
@@ -152,6 +128,78 @@ Footer v1 - NiyoGen (No Theme Toggle)
     </div>
   </div>
   <Component src="src/components/shared/package-link.htm" />
+
+  <!-- Footer Contact Modal -->
+  <dialog class="modal-overlay footer-contact-modal fixed top-0 left-0 h-full w-full bg-black/80 backdrop-blur-sm !z-[9999] modal-close place-items-center">
+    <div class="modal-content footer-contact-content max-w-[500px] w-[90%] rounded-3xl bg-white dark:bg-background-6 shadow-2xl p-8 md:p-10">
+      <!-- Close Button -->
+      <button
+        class="modal-close-btn footer-contact-close absolute top-6 right-6 flex items-center justify-center size-9 bg-background-2 dark:bg-background-8 hover:bg-primary-500 dark:hover:bg-primary-500 text-secondary dark:text-accent hover:text-white rounded-full cursor-pointer transition-all duration-300"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          class="size-5"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Content -->
+      <div class="text-center space-y-6">
+        <!-- Icon -->
+        <div class="flex justify-center">
+          <div class="size-16 rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-lg">
+            <svg class="size-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="space-y-2">
+          <h3 class="text-heading-4 md:text-heading-3 font-bold text-secondary dark:text-accent">
+            Contact Us for a Free Demo
+          </h3>
+          <p class="text-tagline-1 text-secondary/70 dark:text-accent/70">
+            Industry partnerships and pricing available on request.
+          </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-4 pt-4">
+          <div class="flex items-center justify-center gap-3 p-4 rounded-2xl bg-background-1 dark:bg-background-7">
+            <svg class="size-5 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:api@niyogen.com" class="text-tagline-1 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors font-medium">
+              api@niyogen.com
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center gap-3 p-4 rounded-2xl bg-background-1 dark:bg-background-7">
+            <svg class="size-5 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+            <a href="https://www.niyogen.com" target="_blank" class="text-tagline-1 text-secondary dark:text-accent hover:text-primary-500 dark:hover:text-primary-400 transition-colors font-medium">
+              www.niyogen.com
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="pt-4">
+          <a href="mailto:api@niyogen.com?subject=Free Demo Request - NiyoGen" class="btn btn-primary btn-lg w-full">
+            <span>Request Free Demo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
   <!-- SCRIPT -->
   <script type="module" src="./src/main.js"></script>
