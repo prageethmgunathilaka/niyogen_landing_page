@@ -1,6 +1,7 @@
 # Next SaaS HTML Template 
 # More Info: http://localhost:5173/niyogen.html/ hero,Product Overview,Features,How It Works,Get Started, fnq,
 # http://localhost:5173/home-page-02.html
+# https://github.com/prageethmgunathilaka/niyogen_landing_page
 
 # Change the existing origin to point to the new repository
 git remote set-url origin https://github.com/prageethmgunathilaka/niyogen_landing_page.git
