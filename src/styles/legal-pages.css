@@ -59,10 +59,4 @@
   margin-bottom: 3rem;
 }
 
-/* Improve readability in dark mode */
-@media (prefers-color-scheme: dark) {
-  .privacy-policy {
-    color: rgba(255, 255, 255, 0.85);
-  }
-}
 
