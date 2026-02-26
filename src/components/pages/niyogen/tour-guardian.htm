@@ -1,155 +1,267 @@
 <!-- =========================
 Tour Guardian - Product Spotlight
 ===========================-->
-<section id="tour-guardian" class="pt-10 md:pt-14 lg:pt-20 xl:pt-24 pb-2 bg-background-2">
-  <div class="main-container">
+<section id="tour-guardian" class="pt-10 md:pt-14 lg:pt-20 xl:pt-24 pb-4 md:pb-6 lg:pb-8 xl:pb-10 bg-background-2">
+  <!-- Section heading -->
+  <div class="2xl:max-w-[1440px] max-w-[1290px] mx-5 xl:mx-auto mb-8 md:mb-10">
+    <div class="space-y-3">
+      <span data-ns-animate data-delay="0.1" class="badge badge-green mb-2">Our Products</span>
+      <h2
+        data-ns-animate
+        data-delay="0.2"
+        class="font-normal"
+      >
+        AI agents built for the <span class="text-primary-500">Real World.</span>
+      </h2>
+      <p data-ns-animate data-delay="0.3" class="text-secondary/60 whitespace-nowrap">
+        Purpose-built agentic companions that act on your behalf — before, during, and after every experience.
+      </p>
+    </div>
+  </div>
+
+  <div
+    data-ns-animate
+    data-delay="0.2"
+    class="2xl:max-w-[1440px] max-w-[1290px] mx-5 xl:mx-auto rounded-4xl max-[426px]:rounded-2xl bg-secondary overflow-hidden relative"
+  >
+    <!-- Teal glow top-right — same as how-it-works.htm -->
     <div
       data-ns-animate
-      data-delay="0.2"
-      class="relative overflow-hidden rounded-4xl bg-secondary max-[426px]:rounded-2xl"
+      data-delay="0.3"
+      data-duration="2"
+      data-spring
+      data-direction="right"
+      data-offset="50"
+      class="absolute max-[400px]:-right-[32%] max-[400px]:-top-[20%] -top-[31%] -right-[40%] sm:-right-[20%] md:-right-[28%] lg:-right-[20%] xl:-right-[12%] max-w-[530px] rotate-90 md:rotate-[108deg] select-none pointer-events-none"
     >
-      <!-- Reuse integration-bg for consistency with pricing section -->
-      <div class="absolute inset-0 -z-0 pointer-events-none select-none">
-        <img
-          src="images/home-page-2/integration-bg.png"
-          alt=""
-          class="w-full h-full object-cover opacity-50"
-        />
+      <img
+        src="images/gradient/gradient-16.png"
+        alt=""
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Vertical light beams — same as how-it-works.htm -->
+    <div class="absolute bg-(image:--color-gradient-5) blur-[85px] -rotate-[50deg] z-10 left-[28%] -top-[22%] w-[108px] h-[982px] pointer-events-none select-none"></div>
+    <div class="absolute bg-(image:--color-gradient-5) blur-[85px] -rotate-45 z-10 right-[8%] -top-[22%] w-[108px] h-[982px] pointer-events-none select-none"></div>
+
+    <!-- Content -->
+    <div
+      class="relative z-20 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-8 sm:px-12 lg:px-16 py-12 lg:py-14 max-[426px]:px-6 max-[426px]:py-10"
+    >
+      <!-- ── Logo & Identity ── -->
+      <div
+        data-ns-animate
+        data-delay="0.3"
+        data-direction="left"
+        data-offset="60"
+        class="flex flex-col items-center lg:items-start gap-4 shrink-0"
+      >
+        <!-- Logo mark -->
+        <div
+          class="size-[72px] rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-2xl ring-4 ring-white/10"
+        >
+          <svg
+            class="size-9 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            stroke-width="1.6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+            />
+          </svg>
+        </div>
+
+        <!-- Brand -->
+        <div class="text-center lg:text-left">
+          <p class="text-accent/50 text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">
+            Powered by NiyoGen
+          </p>
+          <h3 class="text-accent font-bold text-heading-4 leading-tight">Tour Guardian</h3>
+        </div>
       </div>
 
-      <!-- Subtle glow accent top-right -->
-      <div
-        class="absolute -top-20 -right-20 size-64 rounded-full bg-primary-500/10 blur-3xl pointer-events-none select-none"
-      ></div>
+      <!-- Vertical divider (desktop only) -->
+      <div class="hidden lg:block w-px self-stretch bg-white/10 shrink-0 my-2"></div>
 
+      <!-- ── Summary + Journey Phases ── -->
       <div
-        class="relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-8 sm:px-12 lg:px-16 py-12 lg:py-14 max-[426px]:px-6 max-[426px]:py-10"
+        data-ns-animate
+        data-delay="0.4"
+        class="flex-1 flex flex-col gap-6 text-center lg:text-left"
       >
-        <!-- ── Logo & Identity ── -->
-        <div
-          data-ns-animate
-          data-delay="0.3"
-          data-direction="left"
-          data-offset="60"
-          class="flex flex-col items-center lg:items-start gap-4 shrink-0"
-        >
-          <!-- Logo mark -->
-          <div
-            class="size-[72px] rounded-2xl bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center shadow-2xl ring-4 ring-white/10"
-          >
-            <svg
-              class="size-9 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              stroke-width="1.6"
-            >
-              <!-- Map + shield hybrid: represents journey safety -->
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
-              />
-            </svg>
-          </div>
+        <p class="text-accent/85 text-heading-6 font-normal leading-relaxed max-w-[540px] mx-auto lg:mx-0">
+          An agentic AI travel companion that proactively plans your trip,
+          keeps you safe on the ground, and rewards you when you're home.
+        </p>
 
-          <!-- Brand -->
-          <div class="text-center lg:text-left">
-            <p class="text-accent/50 text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">
-              Powered by NiyoGen
-            </p>
-            <h3 class="text-accent font-bold text-heading-4 leading-tight">Tour Guardian</h3>
-          </div>
-        </div>
-
-        <!-- Vertical divider (desktop only) -->
-        <div class="hidden lg:block w-px self-stretch bg-white/10 shrink-0 my-2"></div>
-
-        <!-- ── Summary + Journey Phases ── -->
-        <div
-          data-ns-animate
-          data-delay="0.4"
-          class="flex-1 flex flex-col gap-6 text-center lg:text-left"
-        >
-          <p class="text-accent/85 text-heading-6 font-normal leading-relaxed max-w-[540px] mx-auto lg:mx-0">
-            An agentic AI travel companion that proactively plans your trip,
-            keeps you safe on the ground, and rewards you when you're home.
-          </p>
-
-          <!-- Three journey-phase pills -->
-          <div class="flex flex-wrap justify-center lg:justify-start items-center gap-2.5">
-            <!-- Before -->
-            <span
-              class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium"
-            >
-              <span
-                class="size-6 rounded-full bg-ns-green/20 border border-ns-green/40 flex items-center justify-center shrink-0"
-              >
-                <svg class="size-3.5 text-ns-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
-                  <circle cx="12" cy="12" r="9" stroke-linecap="round" />
-                </svg>
-              </span>
-              Before — Plan smarter
+        <!-- Three journey-phase pills -->
+        <div class="flex flex-wrap justify-center lg:justify-start items-center gap-2.5">
+          <!-- Before -->
+          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+            <span class="size-6 rounded-full bg-ns-green/20 border border-ns-green/40 flex items-center justify-center shrink-0">
+              <svg class="size-3.5 text-ns-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="9" stroke-linecap="round" />
+              </svg>
             </span>
+            Before — Plan smarter
+          </span>
 
-            <!-- Arrow connector -->
-            <svg class="size-3.5 text-white/25 shrink-0 max-[480px]:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
+          <!-- Arrow -->
+          <svg class="size-3.5 text-white/25 shrink-0 max-[480px]:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
 
-            <!-- During -->
-            <span
-              class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium"
-            >
-              <span
-                class="size-6 rounded-full bg-primary-400/20 border border-primary-400/40 flex items-center justify-center shrink-0"
-              >
-                <svg class="size-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                </svg>
-              </span>
-              During — Stay safe
+          <!-- During -->
+          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+            <span class="size-6 rounded-full bg-primary-400/20 border border-primary-400/40 flex items-center justify-center shrink-0">
+              <svg class="size-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
             </span>
+            During — Stay safe
+          </span>
 
-            <!-- Arrow connector -->
-            <svg class="size-3.5 text-white/25 shrink-0 max-[480px]:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
+          <!-- Arrow -->
+          <svg class="size-3.5 text-white/25 shrink-0 max-[480px]:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
 
-            <!-- After -->
-            <span
-              class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium"
-            >
-              <span
-                class="size-6 rounded-full bg-ns-cyan/20 border border-ns-cyan/40 flex items-center justify-center shrink-0"
-              >
-                <svg class="size-3.5 text-ns-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                </svg>
-              </span>
-              After — Earn rewards
+          <!-- After -->
+          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+            <span class="size-6 rounded-full bg-ns-cyan/20 border border-ns-cyan/40 flex items-center justify-center shrink-0">
+              <svg class="size-3.5 text-ns-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+              </svg>
             </span>
-          </div>
+            After — Earn rewards
+          </span>
         </div>
+      </div>
 
-        <!-- ── CTA ── -->
-        <div
-          data-ns-animate
-          data-delay="0.5"
-          data-direction="right"
-          data-offset="60"
-          class="shrink-0"
+      <!-- ── CTA ── -->
+      <div
+        data-ns-animate
+        data-delay="0.5"
+        data-direction="right"
+        data-offset="60"
+        class="shrink-0"
+      >
+        <a
+          href="#contact"
+          class="btn btn-accent hover:btn-primary btn-lg whitespace-nowrap shadow-lg"
         >
-          <a
-            href="#contact"
-            class="btn btn-accent hover:btn-primary btn-lg whitespace-nowrap shadow-lg"
-          >
-            <span>Learn more</span>
-          </a>
-        </div>
+          <span>Learn more</span>
+        </a>
       </div>
     </div>
   </div>
+
+  <!-- ════════════════════════════════════
+       CARD 2 — Dealmate
+  ════════════════════════════════════ -->
+  <div
+    data-ns-animate
+    data-delay="0.4"
+    class="2xl:max-w-[1440px] max-w-[1290px] mx-5 xl:mx-auto mt-5 rounded-4xl max-[426px]:rounded-2xl bg-secondary overflow-hidden relative"
+  >
+    <!-- Glow — top-left (mirrors Tour Guardian's top-right) -->
+    <div
+      data-ns-animate data-delay="0.5" data-duration="2" data-spring data-direction="left" data-offset="50"
+      class="absolute max-[400px]:-left-[32%] max-[400px]:-top-[20%] -top-[31%] -left-[40%] sm:-left-[20%] md:-left-[28%] lg:-left-[20%] xl:-left-[12%] max-w-[530px] -rotate-90 md:-rotate-[108deg] select-none pointer-events-none"
+    >
+      <img src="images/gradient/gradient-16.png" alt="" class="w-full h-full object-cover" />
+    </div>
+    <div class="absolute bg-(image:--color-gradient-5) blur-[85px] rotate-[50deg] z-10 right-[28%] -top-[22%] w-[108px] h-[982px] pointer-events-none select-none"></div>
+    <div class="absolute bg-(image:--color-gradient-5) blur-[85px] rotate-45 z-10 left-[8%] -top-[22%] w-[108px] h-[982px] pointer-events-none select-none"></div>
+
+    <!-- Content -->
+    <div class="relative z-20 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 px-8 sm:px-12 lg:px-16 py-12 lg:py-14 max-[426px]:px-6 max-[426px]:py-10">
+
+      <!-- ── Logo & Identity ── -->
+      <div
+        data-ns-animate data-delay="0.5" data-direction="left" data-offset="60"
+        class="flex flex-col items-center lg:items-start gap-4 shrink-0"
+      >
+        <!-- Dealmate logo -->
+        <div class="size-[72px] rounded-2xl bg-white flex items-center justify-center shadow-2xl ring-4 ring-white/10 overflow-hidden p-1.5">
+          <img src="images/dealmate-logo.png" alt="Dealmate" class="w-full h-full object-contain" />
+        </div>
+        <!-- Brand -->
+        <div class="text-center lg:text-left">
+          <p class="text-accent/50 text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">Powered by NiyoGen</p>
+          <h3 class="text-accent font-bold text-heading-4 leading-tight">Dealmate</h3>
+        </div>
+      </div>
+
+      <!-- Vertical divider -->
+      <div class="hidden lg:block w-px self-stretch bg-white/10 shrink-0 my-2"></div>
+
+      <!-- ── Summary + Intelligence phases ── -->
+      <div data-ns-animate data-delay="0.6" class="flex-1 flex flex-col gap-6 text-center lg:text-left">
+        <p class="text-accent/85 text-heading-6 font-normal leading-relaxed max-w-[540px] mx-auto lg:mx-0">
+          A context-aware AI shopping companion that detects your location,
+          scans nearby retailers, and surfaces the best deals exactly when you need them.
+        </p>
+
+        <!-- Three intelligence phases -->
+        <div class="flex flex-wrap justify-center lg:justify-start items-center gap-2.5">
+          <!-- Detect -->
+          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+            <span class="size-6 rounded-full bg-ns-green/20 border border-ns-green/40 flex items-center justify-center shrink-0">
+              <svg class="size-3.5 text-ns-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+            </span>
+            Detect — Location & intent
+          </span>
+
+          <!-- Arrow -->
+          <svg class="size-3.5 text-white/25 shrink-0 max-[480px]:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+
+          <!-- Scan -->
+          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+            <span class="size-6 rounded-full bg-primary-400/20 border border-primary-400/40 flex items-center justify-center shrink-0">
+              <svg class="size-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+            </span>
+            Scan — Retailers & stores
+          </span>
+
+          <!-- Arrow -->
+          <svg class="size-3.5 text-white/25 shrink-0 max-[480px]:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+
+          <!-- Surface -->
+          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+            <span class="size-6 rounded-full bg-ns-cyan/20 border border-ns-cyan/40 flex items-center justify-center shrink-0">
+              <svg class="size-3.5 text-ns-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z" />
+              </svg>
+            </span>
+            Surface — Best deals, instantly
+          </span>
+        </div>
+      </div>
+
+      <!-- ── CTA ── -->
+      <div data-ns-animate data-delay="0.7" data-direction="right" data-offset="60" class="shrink-0">
+        <a href="#contact" class="btn btn-accent hover:btn-primary btn-lg whitespace-nowrap shadow-lg">
+          <span>Learn more</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
 </section>
