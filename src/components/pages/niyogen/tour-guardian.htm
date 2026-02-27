@@ -1,3 +1,25 @@
+<style>
+  @keyframes shimmer {
+    0%   { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .powered-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0.55) 0%,
+      rgba(255,255,255,0.55) 30%,
+      rgba(255,255,255,1) 50%,
+      rgba(255,255,255,0.55) 70%,
+      rgba(255,255,255,0.55) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 7s linear infinite;
+  }
+</style>
+
 <!-- =========================
 Tour Guardian - Product Spotlight
 ===========================-->
@@ -76,7 +98,7 @@ Tour Guardian - Product Spotlight
 
         <!-- Brand -->
         <div class="text-center lg:text-left">
-          <p class="text-accent/50 text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">
+          <p class="powered-shimmer text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">
             Powered by NiyoGen
           </p>
           <h3 class="text-accent font-bold text-heading-4 leading-tight">Tour Guardian</h3>
@@ -198,7 +220,7 @@ Tour Guardian - Product Spotlight
         </div>
         <!-- Brand -->
         <div class="text-center lg:text-left">
-          <p class="text-accent/50 text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">Powered by NiyoGen</p>
+          <p class="powered-shimmer text-[11px] font-semibold tracking-[0.18em] uppercase mb-1">Powered by NiyoGen</p>
           <h3 class="text-accent font-bold text-heading-4 leading-tight">Dealmate</h3>
         </div>
       </div>
