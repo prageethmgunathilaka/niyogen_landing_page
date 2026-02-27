@@ -216,7 +216,8 @@ Tour Guardian - Product Spotlight
         <!-- Three intelligence phases -->
         <div class="flex flex-wrap justify-center lg:justify-start items-center gap-2.5">
           <!-- Detect -->
-          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+          <span class="tg-pill inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium cursor-default transition-colors duration-200 hover:bg-white/12"
+            data-tg="detect">
             <span class="size-6 rounded-full bg-ns-green/20 border border-ns-green/40 flex items-center justify-center shrink-0">
               <svg class="size-3.5 text-ns-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -232,7 +233,8 @@ Tour Guardian - Product Spotlight
           </svg>
 
           <!-- Scan -->
-          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+          <span class="tg-pill inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium cursor-default transition-colors duration-200 hover:bg-white/12"
+            data-tg="scan">
             <span class="size-6 rounded-full bg-primary-400/20 border border-primary-400/40 flex items-center justify-center shrink-0">
               <svg class="size-3.5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
@@ -247,7 +249,8 @@ Tour Guardian - Product Spotlight
           </svg>
 
           <!-- Surface -->
-          <span class="inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium">
+          <span class="tg-pill inline-flex items-center gap-2 pl-1.5 pr-4 py-1.5 rounded-full bg-white/8 border border-white/12 text-accent/75 text-tagline-2 font-medium cursor-default transition-colors duration-200 hover:bg-white/12"
+            data-tg="surface">
             <span class="size-6 rounded-full bg-ns-cyan/20 border border-ns-cyan/40 flex items-center justify-center shrink-0">
               <svg class="size-3.5 text-ns-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z" />
@@ -296,6 +299,24 @@ Tour Guardian - Product Spotlight
         color: '#22d3ee',
         borderColor: 'rgba(34,211,238,0.25)',
         items: ['Trip memories & expense summary', 'Feedback & review prompts', 'Loyalty rewards for future travel']
+      },
+      detect: {
+        label: 'Detect',
+        color: '#4ade80',
+        borderColor: 'rgba(74,222,128,0.25)',
+        items: ['Your current location', 'What you\'re looking for', 'Walking near a mall → alerts promotions', 'Searching for shoes → nearby discounts']
+      },
+      scan: {
+        label: 'Scan',
+        color: '#a78bfa',
+        borderColor: 'rgba(167,139,250,0.25)',
+        items: ['Nearby retailers in real-time', 'Online stores for price comparison', 'Live grocery price drops', 'Best offer before you pay']
+      },
+      surface: {
+        label: 'Surface',
+        color: '#22d3ee',
+        borderColor: 'rgba(34,211,238,0.25)',
+        items: ['Best deal surfaced instantly', 'Context-aware, not just coupons', 'Just-in-time alerts as you move', 'Smarter than browsing multiple apps']
       }
     };
 
