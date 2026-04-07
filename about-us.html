@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <Component src="src/components/shared/head-links.htm" />
+    <title>About NiyoGen — Real-world AI Decision Companions</title>
+  </head>
+  <body class="bg-background-8 text-accent">
+    <Component
+      src="src/components/pages/niyogen/header.htm"
+      class="border border-white/10 bg-background-8/60 backdrop-blur-md"
+    />
+    <main>
+      <!-- Page Header -->
+      <section class="pt-32 md:pt-48 pb-12 text-center bg-background-8">
+        <div class="main-container">
+          <h1 data-ns-animate data-delay="0.1" class="text-heading-2 md:text-heading-1 font-bold mb-6 text-white">Our Mission</h1>
+          <p data-ns-animate data-delay="0.2" class="max-w-[700px] mx-auto text-accent/60 text-lg">
+            Empowering humanity with intelligent AI companions that reason through complexity and act with integrity in every situation.
+          </p>
+        </div>
+      </section>
+
+      <Component src="src/components/pages/niyogen/about.htm" />
+      
+      <!-- Values/Stats Section -->
+      <section class="py-24 bg-background-5 border-y border-white/5">
+        <div class="main-container text-center">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div data-ns-animate data-delay="0.1">
+              <p class="text-heading-3 font-bold text-white mb-2">50+</p>
+              <p class="text-tagline-2 text-accent/50 uppercase tracking-widest">Industry Models</p>
+            </div>
+            <div data-ns-animate data-delay="0.2">
+              <p class="text-heading-3 font-bold text-ns-cyan mb-2">10M+</p>
+              <p class="text-tagline-2 text-accent/50 uppercase tracking-widest">Real-world Decisions</p>
+            </div>
+            <div data-ns-animate data-delay="0.3">
+              <p class="text-heading-3 font-bold text-ns-green mb-2">120+</p>
+              <p class="text-tagline-2 text-accent/50 uppercase tracking-widest">Countries Covered</p>
+            </div>
+            <div data-ns-animate data-delay="0.4">
+              <p class="text-heading-3 font-bold text-primary-400 mb-2">0</p>
+              <p class="text-tagline-2 text-accent/50 uppercase tracking-widest">Compromises on Safety</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Component src="src/components/pages/niyogen/faq.htm" />
+    </main>
+    <Component src="src/components/pages/niyogen/footer.htm" />
+  </body>
+</html>

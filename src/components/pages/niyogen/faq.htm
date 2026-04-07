@@ -1,143 +1,107 @@
 <!-- =========================
-FAQ section
+FAQ section - NiyoGen Premium
 ===========================-->
 <section
   id="faq"
-  class="pb-8 pt-2 md:pb-12 md:pt-3 lg:pb-16 lg:pt-4 xl:pb-20 xl:pt-5"
+  class="py-24 bg-background-8 border-t border-white/5"
 >
   <div class="main-container">
-    <div class="text-center space-y-3 mb-14 md:mb-[70px]">
-      <h2 data-ns-animate data-delay="0.2">
-        Frequently
-        <span class="text-primary-500 inline-block">asked questions</span>
+    <div class="text-center space-y-4 mb-16">
+      <span data-ns-animate data-delay="0.1" class="badge badge-green mb-2">Support</span>
+      <h2 data-ns-animate data-delay="0.2" class="text-white text-heading-3 md:text-heading-2">
+        Frequently <span class="text-ns-cyan">asked questions</span>
       </h2>
-      <p data-ns-animate data-delay="0.3" class="lg:max-w-[620px] mx-auto">
-        Everything you need to know about NiyoGen's FastGraph Swarm Builder and EvolSpace.
+      <p data-ns-animate data-delay="0.3" class="lg:max-w-[620px] mx-auto text-accent/60">
+        Discover how NiyoGen is bringing intelligent AI agents to real-world applications.
       </p>
     </div>
 
     <!-- faq items -->
     <div data-ns-animate data-delay="0.4" class="accordion max-w-[850px] w-full space-y-4 mx-auto">
-      <div
-        class="dark:bg-background-7 bg-white rounded-[20px] px-6 sm:px-8 accordion-item active-accordion"
-      >
-        <button
-          class="accordion-action flex items-center cursor-pointer justify-between sm:pt-8 pt-5 sm:pb-8 pb-5 w-full"
-        >
-          <span
-            class="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-          >
-            What is FastGraph Swarm Builder?
+      <!-- Item 1 -->
+      <div class="bg-secondary/50 border border-white/5 backdrop-blur-sm rounded-3xl px-6 sm:px-8 accordion-item active-accordion transition-all duration-300 hover:border-white/10">
+        <button class="accordion-action flex items-center cursor-pointer justify-between py-7 w-full group">
+          <span class="flex-1 text-left text-heading-6 font-semibold text-accent group-hover:text-white transition-colors">
+            What makes NiyoGen agents different?
           </span>
-          <Component src="src/components/shared/accordion-icon.htm" />
+          <div class="size-8 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-300 accordion-icon-wrapper">
+             <svg class="size-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
         </button>
         <div class="accordion-content">
-          <div class="border-t border-t-stroke-2 dark:border-t-stroke-6 sm:pt-6 pt-5 sm:pb-8 pb-5">
-            <p>
-              It's a no-code way to build swarms of LLM agents from plain-language prompts, orchestrate them into workflows, and connect them to the tools you already use.
+          <div class="border-t border-white/5 pt-6 pb-8">
+            <p class="text-accent/70 leading-relaxed">
+              NiyoGen agents are purpose-built for high-stakes, real-world decisions. Unlike generic chatbots, they are context-aware, reason through complex trade-offs (EvolSpace), and operate within strict safety guardrails. They move from "answering questions" to "taking informed action."
             </p>
           </div>
         </div>
       </div>
 
-      <div class="dark:bg-background-7 bg-white rounded-[20px] px-6 sm:px-8 accordion-item">
-        <button
-          class="accordion-action flex items-center cursor-pointer justify-between sm:pt-8 pt-5 sm:pb-8 pb-5 w-full"
-        >
-          <span
-            class="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-          >
-            Can non-technical users create and evolve agents?
+      <!-- Item 2 -->
+      <div class="bg-secondary/50 border border-white/5 backdrop-blur-sm rounded-3xl px-6 sm:px-8 accordion-item transition-all duration-300 hover:border-white/10">
+        <button class="accordion-action flex items-center cursor-pointer justify-between py-7 w-full group">
+          <span class="flex-1 text-left text-heading-6 font-semibold text-accent group-hover:text-white transition-colors">
+            Is my data secure with NiyoGen?
           </span>
-          <Component src="src/components/shared/accordion-icon.htm" />
+          <div class="size-8 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-300 accordion-icon-wrapper">
+             <svg class="size-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
         </button>
         <div class="accordion-content">
-          <div class="border-t border-t-stroke-2 dark:border-t-stroke-6 sm:pt-6 pt-5 sm:pb-8 pb-5">
-            <p>
-              Yes. Business users can create agents with prompts and iterate using guided evaluation loops—no code required.
+          <div class="border-t border-white/5 pt-6 pb-8">
+            <p class="text-accent/70 leading-relaxed">
+              Security is our core foundation. Every agent built with FastGraph follows enterprise-grade PII controls and strict data isolation. We ensure that your proprietary information is used only to empower your agents, never to train global models.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="dark:bg-background-7 bg-white rounded-[20px] px-6 sm:px-8 accordion-item">
-        <button
-          class="accordion-action flex items-center cursor-pointer justify-between sm:pt-8 pt-5 sm:pb-8 pb-5 w-full"
-        >
-          <span
-            class="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-          >
-            How do guardrails and approvals work?
+      <!-- Item 3 -->
+      <div class="bg-secondary/50 border border-white/5 backdrop-blur-sm rounded-3xl px-6 sm:px-8 accordion-item transition-all duration-300 hover:border-white/10">
+        <button class="accordion-action flex items-center cursor-pointer justify-between py-7 w-full group">
+          <span class="flex-1 text-left text-heading-6 font-semibold text-accent group-hover:text-white transition-colors">
+            How do I get started with a custom use case?
           </span>
-          <Component src="src/components/shared/accordion-icon.htm" />
+          <div class="size-8 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-300 accordion-icon-wrapper">
+             <svg class="size-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
         </button>
         <div class="accordion-content">
-          <div class="border-t border-t-stroke-2 dark:border-t-stroke-6 sm:pt-6 pt-5 sm:pb-8 pb-5">
-            <p>
-              You can define policies (allow/deny, PII controls, tool permissions) and require approvals for sensitive actions. All changes are auditable.
+          <div class="border-t border-white/5 pt-6 pb-8">
+            <p class="text-accent/70 leading-relaxed">
+              The best way is to <a href="#" class="footer-contact-trigger text-ns-cyan underline">request a free demo</a>. Our team will walk you through potential architectures and how NiyoGen can be tailored to your specific industry needs.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="dark:bg-background-7 bg-white rounded-[20px] px-6 sm:px-8 accordion-item">
-        <button
-          class="accordion-action flex items-center cursor-pointer justify-between sm:pt-8 pt-5 sm:pb-8 pb-5 w-full"
-        >
-          <span
-            class="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-          >
-            What integrations are supported?
+      <!-- Item 4 -->
+      <div class="bg-secondary/50 border border-white/5 backdrop-blur-sm rounded-3xl px-6 sm:px-8 accordion-item transition-all duration-300 hover:border-white/10">
+        <button class="accordion-action flex items-center cursor-pointer justify-between py-7 w-full group">
+          <span class="flex-1 text-left text-heading-6 font-semibold text-accent group-hover:text-white transition-colors">
+            Does NiyoGen support voice interactions?
           </span>
-          <Component src="src/components/shared/accordion-icon.htm" />
+          <div class="size-8 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-300 accordion-icon-wrapper">
+             <svg class="size-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
         </button>
         <div class="accordion-content">
-          <div class="border-t border-t-stroke-2 dark:border-t-stroke-6 sm:pt-6 pt-5 sm:pb-8 pb-5">
-            <p>
-              We focus on practical connectors: CRMs, ticketing, monitoring, data sources, and model providers. Tell us your top tools—we'll prioritize them.
+          <div class="border-t border-white/5 pt-6 pb-8">
+            <p class="text-accent/70 leading-relaxed">
+               Yes, NiyoGen's architecture supports real-time multi-modal interactions, including high-fidelity voice. Many of our agents, like Tour Guardian, are designed specifically as real-time voice companions for on-the-go decision support.
             </p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="dark:bg-background-7 bg-white rounded-[20px] px-6 sm:px-8 accordion-item">
-        <button
-          class="accordion-action flex items-center cursor-pointer justify-between sm:pt-8 pt-5 sm:pb-8 pb-5 w-full"
-        >
-          <span
-            class="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-          >
-            How do we go from demo to production?
-          </span>
-          <Component src="src/components/shared/accordion-icon.htm" />
+    <!-- Final Support CTA -->
+    <div class="mt-20 text-center">
+      <div data-ns-animate data-delay="0.5" class="inline-flex items-center gap-4 p-2 pl-6 rounded-full bg-secondary/50 border border-white/10 backdrop-blur-md">
+        <p class="text-accent/80 text-tagline-2">Still have questions?</p>
+        <button class="footer-contact-trigger btn btn-primary btn-md rounded-full shadow-lg">
+          <span>Talk to an Expert</span>
         </button>
-        <div class="accordion-content">
-          <div class="border-t border-t-stroke-2 dark:border-t-stroke-6 sm:pt-6 pt-5 sm:pb-8 pb-5">
-            <p>
-              Start with a guided demo, then enable projects, approvals, and monitoring. Self-host and enterprise options are planned; contact us for timelines.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="dark:bg-background-7 bg-white rounded-[20px] px-6 sm:px-8 accordion-item">
-        <button
-          class="accordion-action flex items-center cursor-pointer justify-between sm:pt-8 pt-5 sm:pb-8 pb-5 w-full"
-        >
-          <span
-            class="flex-1 text-left sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent"
-          >
-            What is EvolSpace?
-          </span>
-          <Component src="src/components/shared/accordion-icon.htm" />
-        </button>
-        <div class="accordion-content">
-          <div class="border-t border-t-stroke-2 dark:border-t-stroke-6 sm:pt-6 pt-5 sm:pb-8 pb-5">
-            <p>
-              EvolSpace is our managed Agent Evolution service—run evaluations, compare outcomes, and apply guardrail-aware updates without managing infra.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </div>

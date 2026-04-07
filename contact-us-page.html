@@ -1,36 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <Component src="src/components/shared/head-links.htm" />
-    <title>Contact us page - NextSaaS</title>
+    <title>Contact NiyoGen — Real-time AI Decision Voice Companion</title>
   </head>
-  <body class="bg-background-3 dark:bg-background-7">
+  <body class="bg-background-8 text-accent">
     <Component
-      src="src/components/shared/header-one.htm"
-      class="border border-stroke-2 bg-accent/60 dark:border-stroke-6 dark:bg-background-9 backdrop-blur-[25px]"
-      btn-class="btn-primary hover:btn-secondary dark:hover:btn-accent"
+      src="src/components/pages/niyogen/header.htm"
+      class="border border-white/10 bg-background-8/60 backdrop-blur-md"
     />
     <main>
-      <Component
-        src="src/components/shared/page-hero.htm"
-        class="pt-24 md:pt-36 lg:pt-40 xl:pt-[200px]"
-        title="Contact us"
-        heading="Contact us"
-      />
+      <!-- Custom Page Hero for Contact -->
+      <section class="pt-32 md:pt-44 pb-12 text-center">
+        <div class="main-container">
+          <span data-ns-animate data-delay="0.1" class="badge badge-green mb-4">Contact Us</span>
+          <h1 data-ns-animate data-delay="0.2" class="text-heading-3 md:text-heading-2 font-bold mb-4">Get in Touch</h1>
+          <p data-ns-animate data-delay="0.3" class="max-w-[600px] mx-auto text-accent/60">
+            Have questions about our AI agents? Whether you're interested in Tour Guardian, Dealmate, or custom enterprise solutions, we're here to help.
+          </p>
+        </div>
+      </section>
+
       <Component src="src/components/pages/contact-us/contact.htm" />
-      <Component src="src/components/pages/contact-us/contact-map.htm" />
-      <Component
-        src="src/components/shared/cta/cta-v1.htm"
-        class="dark:bg-background-5 bg-white"
-        badge-class="badge-yellow-v2"
-        badge-text="Get started"
-        span-class="hidden"
-        cta-heading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        cta-btn-text="Get started"
-        btn-class="hover:btn-secondary dark:hover:btn-accent"
-      />
+      
+      <!-- Simple Social Links Section -->
+      <section class="pb-24">
+        <div class="main-container text-center">
+          <p class="text-tagline-2 text-accent/40 uppercase tracking-widest mb-8">Follow our journey</p>
+          <div class="flex justify-center gap-8">
+            <a href="#" class="text-accent/60 hover:text-primary-400 transition-colors">LinkedIn</a>
+            <a href="#" class="text-accent/60 hover:text-primary-400 transition-colors">X (Twitter)</a>
+            <a href="#" class="text-accent/60 hover:text-primary-400 transition-colors">Instagram</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <Component src="src/components/shared/footer-three.htm" />
+    <Component src="src/components/pages/niyogen/footer.htm" />
   </body>
 </html>

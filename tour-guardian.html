@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <Component src="src/components/shared/head-links.htm" />
+    <title>Tour Guardian — Your Real-time Travel Companion | NiyoGen</title>
+    <style>
+      .glow-shadow {
+        box-shadow: 0 0 80px rgba(59, 130, 246, 0.25);
+      }
+      .feature-card:hover {
+        border-color: rgba(59, 130, 246, 0.5);
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .gradient-text-blue {
+        background: linear-gradient(135deg, #fff 0%, #3b8ce6 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-background-8 text-white antialiased selection:bg-primary-500/30">
+    <Component
+      src="src/components/pages/niyogen/header.htm"
+      class="border border-white/10 bg-background-8/60 backdrop-blur-md"
+    />
+    
+    <main>
+      <!-- Hero Product Section -->
+      <section class="pt-32 md:pt-48 pb-20 relative overflow-hidden">
+        <!-- background effects -->
+        <div class="absolute top-0 right-0 size-[800px] bg-primary-500/10 blur-[150px] rounded-full -mr-64 -mt-64"></div>
+        <div class="absolute -bottom-24 -left-24 size-[600px] bg-ns-cyan/5 blur-[120px] rounded-full opacity-50"></div>
+        
+        <div class="main-container relative z-10 flex flex-col items-center text-center">
+          <!-- Logo with premium glow -->
+          <div data-ns-animate data-delay="0.1" class="size-32 rounded-3xl bg-[#2b8ce6] p-4 mb-8 shadow-2xl ring-1 ring-white/20 glow-shadow flex items-center justify-center group overflow-hidden">
+            <img src="images/tripguardian logo - dark bg.png" alt="Tour Guardian" class="w-full h-full object-contain scale-150 group-hover:scale-175 transition-transform duration-500" />
+          </div>
+          
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-500/10 border border-primary-500/20 mb-6">
+            <span class="size-2 rounded-full bg-primary-500 animate-pulse"></span>
+            <span class="text-[11px] font-bold uppercase tracking-widest text-primary-400">Context-Aware AI</span>
+          </div>
+
+          <h1 data-ns-animate data-delay="0.3" class="text-heading-2 md:text-heading-1 font-bold mb-6 gradient-text-blue">Tour Guardian</h1>
+          
+          <div data-ns-animate data-delay="0.5" class="max-w-[900px] mx-auto space-y-8 px-5 sm:px-0">
+            <p class="text-xl md:text-3xl font-medium text-white leading-tight">
+              Guardian is your real-time decision companion—designed to remove uncertainty from every moment of your journey.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left border-t border-white/10 pt-8 md:pt-10 mt-8 md:mt-10">
+              <p class="text-base md:text-lg text-white font-normal leading-relaxed">
+                Whether you're exploring a new city, choosing a safe route at night, or deciding if a price is fair, it delivers instant, trustworthy guidance tailored to your exact situation.
+              </p>
+              <p class="text-base md:text-lg text-white font-normal leading-relaxed">
+                Instead of searching through endless blogs and reviews, simply ask one question and receive a clear, confident answer in seconds. Tour Guardian understands where you are and what matters most—your safety, time, and money.
+              </p>
+            </div>
+            
+            <p class="text-lg md:text-xl font-semibold text-primary-400 pt-6">
+              Travel smarter, move safer, and explore with complete peace of mind—because the right decision at the right moment changes everything.
+            </p>
+          </div>
+
+          <div data-ns-animate data-delay="0.7" class="mt-12 flex flex-wrap justify-center gap-4">
+             <button class="footer-contact-trigger btn btn-primary btn-xl px-12 shadow-xl hover:shadow-primary-500/20 transition-all">
+                <span>Start Your Safe Journey</span>
+             </button>
+             <a href="https://market.niyogen.com/" class="btn btn-white-dark btn-xl px-10 border border-white/10 hover:btn-white">
+                <span>Visit Market</span>
+             </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Grid -->
+      <section class="py-24 bg-background-5 border-y border-white/5">
+        <div class="main-container">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div data-ns-animate data-delay="0.1" class="feature-card p-10 rounded-4xl border border-white/5 bg-secondary/20 transition-all duration-300">
+              <div class="size-16 rounded-2xl bg-ns-green/10 border border-ns-green/30 flex items-center justify-center mb-8">
+                <svg class="size-8 text-ns-green" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" /><circle cx="12" cy="12" r="9" />
+                </svg>
+              </div>
+              <h3 class="text-heading-5 font-bold mb-4 text-white">Before — Plan smarter</h3>
+              <p class="text-white font-normal leading-relaxed">Pre-trip intelligence, personalized itinerary suggestions, and safety briefings before you even leave home.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div data-ns-animate data-delay="0.2" class="feature-card p-10 rounded-4xl border border-white/5 bg-secondary/20 transition-all duration-300">
+              <div class="size-16 rounded-2xl bg-primary-500/10 border border-primary-500/30 flex items-center justify-center mb-8">
+                <svg class="size-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+              </div>
+              <h3 class="text-heading-5 font-bold mb-4 text-white">During — Stay safe</h3>
+              <p class="text-white font-normal leading-relaxed">Real-time safety alerts, location-aware assistance, and local pricing analysis on the fly.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div data-ns-animate data-delay="0.3" class="feature-card p-10 rounded-4xl border border-white/5 bg-secondary/20 transition-all duration-300">
+              <div class="size-16 rounded-2xl bg-ns-cyan/10 border border-ns-cyan/30 flex items-center justify-center mb-8">
+                <svg class="size-8 text-ns-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-heading-5 font-bold mb-4 text-white">After — Smart Rewards</h3>
+              <p class="text-white font-normal leading-relaxed">Expense summaries, memory curation, and loyalty rewards that make your next trip even better.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Component src="src/components/pages/niyogen/pricing.htm" />
+    </main>
+    
+    <Component src="src/components/pages/niyogen/footer.htm" />
+  </body>
+</html>

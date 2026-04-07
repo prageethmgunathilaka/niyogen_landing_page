@@ -52,22 +52,22 @@ Footer v1 - NiyoGen (No Theme Toggle)
           <div class="flex items-center gap-3">
             <a href="#" class="footer-social-link">
               <span class="sr-only">Facebook</span>
-              <img class="size-6 brightness-0 opacity-60 hover:opacity-100 transition-opacity duration-300" src="./images/icons/facebook.svg" alt="Facebook" />
+              <img class="size-6 brightness-0 opacity-40 hover:opacity-100 transition-opacity duration-300" src="./images/icons/facebook.svg" alt="Facebook" class="brightness-200" />
             </a>
             <div class="h-6 w-px bg-secondary/15"></div>
             <a href="#" class="footer-social-link">
               <span class="sr-only">Instagram</span>
-              <img class="size-6 brightness-0 opacity-60 hover:opacity-100 transition-opacity duration-300" src="./images/icons/instagram.svg" alt="Instagram" />
+              <img class="size-6 brightness-0 opacity-40 hover:opacity-100 transition-opacity duration-300" src="./images/icons/instagram.svg" alt="Instagram" />
             </a>
             <div class="h-6 w-px bg-secondary/15"></div>
             <a href="#" class="footer-social-link">
               <span class="sr-only">Youtube</span>
-              <img class="size-6 brightness-0 opacity-60 hover:opacity-100 transition-opacity duration-300" src="./images/icons/youtube.svg" alt="Youtube" />
+              <img class="size-6 brightness-0 opacity-40 hover:opacity-100 transition-opacity duration-300" src="./images/icons/youtube.svg" alt="Youtube" />
             </a>
             <div class="h-6 w-px bg-secondary/15"></div>
             <a href="#" class="footer-social-link">
               <span class="sr-only">LinkedIn</span>
-              <img class="size-6 brightness-0 opacity-60 hover:opacity-100 transition-opacity duration-300" src="./images/icons/linkedin.svg" alt="LinkedIn" />
+              <img class="size-6 brightness-0 opacity-40 hover:opacity-100 transition-opacity duration-300" src="./images/icons/linkedin.svg" alt="LinkedIn" />
             </a>
           </div>
         </div>
@@ -78,10 +78,10 @@ Footer v1 - NiyoGen (No Theme Toggle)
             <p class="sm:text-heading-6 text-tagline-1 font-semibold text-secondary">Company</p>
             <ul class="sm:space-y-5 space-y-3">
               <li>
-                <a href="#" class="text-tagline-1 text-secondary/70 hover:text-secondary font-normal transition-colors duration-300"> About Us </a>
+                <a href="./about-us.html" class="text-tagline-1 text-secondary/70 hover:text-secondary font-normal transition-colors duration-300"> About Us </a>
               </li>
               <li>
-                <a href="#" class="text-tagline-1 text-secondary/70 hover:text-secondary font-normal transition-colors duration-300 footer-contact-trigger"> Contact Us </a>
+                <a href="#" class="footer-contact-trigger text-tagline-1 text-secondary/70 hover:text-secondary font-normal transition-colors duration-300"> Contact Us </a>
               </li>
             </ul>
           </div>
@@ -124,11 +124,18 @@ Footer v1 - NiyoGen (No Theme Toggle)
         data-start="top 105%"
         class="text-tagline-1 font-normal text-secondary/60"
       >
-        Copyright &copy;NiyoGen – AI Agent Platform
+        Copyright &copy; <span id="current-year"></span> NiyoGen – AI Agent Platform
       </p>
     </div>
   </div>
   <Component src="src/components/shared/package-link.htm" />
+
+  <script>
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  </script>
 
   <!-- Footer Contact Modal -->
   <dialog class="modal-overlay footer-contact-modal fixed top-0 left-0 h-full w-full bg-black/80 backdrop-blur-sm !z-[9999] modal-close place-items-center">

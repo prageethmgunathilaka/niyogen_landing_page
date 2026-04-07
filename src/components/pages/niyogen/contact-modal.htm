@@ -1,107 +1,92 @@
 <!-- =========================
-Contact Modal
+Contact Modal (Demo Request)
 ===========================-->
-<dialog class="modal-overlay contact-modal-overlay fixed top-0 left-0 h-full w-full bg-black/80 backdrop-blur-sm !z-[9999] modal-close place-items-center">
+<dialog class="modal-overlay contact-modal-overlay fixed top-0 left-0 h-full w-full bg-black/80 backdrop-blur-sm !z-[9999] modal-close place-items-center flex items-center justify-center p-4">
   <div
-    class="modal-content contact-modal-content max-w-[600px] w-[90%] max-h-[90vh] overflow-y-auto rounded-[20px] md:rounded-3xl bg-background-6 shadow-2xl"
+    class="modal-content contact-modal-content w-full max-w-[650px] max-h-[90vh] overflow-y-auto rounded-[24px] md:rounded-3xl bg-secondary border border-white/10 shadow-2xl relative"
   >
-    <div class="p-6 md:p-8 lg:p-10">
-      <div class="flex items-start justify-between mb-2">
-        <h3 class="text-heading-6 md:text-heading-5 font-semibold text-accent">
-          Contact Us
-        </h3>
+    <!-- Premium Glow Effect -->
+    <div class="absolute inset-0 rounded-[24px] md:rounded-3xl overflow-hidden pointer-events-none">
+      <div class="absolute bg-primary-500/20 blur-[80px] -top-10 -right-10 w-64 h-64 rounded-full"></div>
+    </div>
+
+    <div class="relative z-10 p-6 md:p-8 lg:p-10">
+      <div class="flex items-start justify-between mb-4">
+        <div>
+          <h3 class="text-heading-5 md:text-heading-4 font-bold text-white tracking-tight mb-1">
+            Request a Free Demo
+          </h3>
+          <p class="text-tagline-2 text-white/60 mb-6">
+            Tell us about your needs and we'll schedule a tailored walkthrough of NiyoGen.
+          </p>
+        </div>
         <button
-          class="modal-close-btn contact-modal-close-btn flex items-center justify-center size-9 bg-background-8 hover:bg-primary-500 text-accent hover:text-white rounded-full cursor-pointer transition-all duration-300 flex-shrink-0"
+          class="modal-close-btn contact-modal-close-btn flex items-center justify-center size-10 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-full cursor-pointer transition-all duration-300 flex-shrink-0"
           type="button"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            class="size-5"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
 
-      <p class="text-tagline-2 text-accent/60 mb-6 md:mb-8">
-        Fill out the form below and we'll get back to you as soon as possible.
-      </p>
+      <!-- Success Message (Hidden by default) -->
+      <div id="demo-success-message" class="hidden text-center py-10">
+        <div class="size-16 rounded-full bg-ns-green/20 text-ns-green flex items-center justify-center mx-auto mb-4 border border-ns-green/30">
+          <svg class="size-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+        </div>
+        <h4 class="text-heading-5 font-bold text-white mb-2">Request Sent Successfully!</h4>
+        <p class="text-white/60 mb-6 max-w-md mx-auto">Thank you for your interest. Our team will review your request and get back to you shortly.</p>
+        <button type="button" class="btn btn-accent contact-modal-close-btn-secondary px-8">Close Window</button>
+      </div>
 
-      <form action="/index.html" method="POST" class="space-y-5">
-        <!-- Name field -->
+      <form id="demo-request-form" class="space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Name -->
+          <fieldset class="w-full">
+            <label for="demo-name" class="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-1.5 ml-1">Full Name *</label>
+            <input type="text" name="fullName" id="demo-name" required placeholder="John Doe" class="rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-white/30 w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" />
+          </fieldset>
+
+          <!-- Email -->
+          <fieldset class="w-full">
+            <label for="demo-email" class="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-1.5 ml-1">Work Email *</label>
+            <input type="email" name="emailAddress" id="demo-email" required placeholder="john@company.com" class="rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-white/30 w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" />
+          </fieldset>
+
+          <!-- Phone -->
+          <fieldset class="w-full">
+            <label for="demo-phone" class="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-1.5 ml-1">Phone Number</label>
+            <input type="tel" name="phone" id="demo-phone" placeholder="+1 (555) 000-0000" class="rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-white/30 w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" />
+          </fieldset>
+
+          <!-- Company Name -->
+          <fieldset class="w-full">
+            <label for="demo-company" class="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-1.5 ml-1">Company Name</label>
+            <input type="text" name="company" id="demo-company" placeholder="Acme Corp" class="rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-white/30 w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" />
+          </fieldset>
+
+          <!-- Role -->
+          <fieldset class="w-full md:col-span-2">
+            <label for="demo-role" class="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-1.5 ml-1">Job Role</label>
+            <input type="text" name="role" id="demo-role" placeholder="e.g. Product Manager, CTO" class="rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-white/30 w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200" />
+          </fieldset>
+        </div>
+
+        <!-- Message -->
         <fieldset class="w-full">
-          <label
-            for="contact-name"
-            class="block text-tagline-2 text-accent font-medium mb-2"
-          >
-            Full Name
-          </label>
-          <input
-            type="text"
-            name="fullName"
-            id="contact-name"
-            required
-            placeholder="Enter your name"
-            class="rounded-full placeholder:text-tagline-2 border border-stroke-6 bg-background-5 placeholder:text-accent/50 text-accent w-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder:font-normal font-normal transition-all duration-200"
-            aria-required="true"
-          />
+          <label for="demo-message" class="block text-xs font-semibold uppercase tracking-wider text-white/50 mb-1.5 ml-1">How can we help? (Optional)</label>
+          <textarea name="message" id="demo-message" placeholder="Briefly describe your use case..." rows="3" class="rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-white/30 w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-none transition-all duration-200"></textarea>
         </fieldset>
 
-        <!-- Email field -->
-        <fieldset class="w-full">
-          <label
-            for="contact-email"
-            class="block text-tagline-2 text-accent font-medium mb-2"
-          >
-            Email Address
-          </label>
-          <input
-            type="email"
-            required
-            name="emailAddress"
-            id="contact-email"
-            placeholder="Enter your email"
-            class="rounded-full placeholder:text-tagline-2 border border-stroke-6 bg-background-5 placeholder:text-accent/50 text-accent w-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder:font-normal font-normal transition-all duration-200"
-            aria-required="true"
-          />
-        </fieldset>
-
-        <!-- Message field -->
-        <fieldset class="w-full">
-          <label
-            for="contact-message"
-            class="block text-tagline-2 text-accent font-medium mb-2"
-          >
-            Message
-          </label>
-          <textarea
-            name="message"
-            id="contact-message"
-            required
-            placeholder="Tell us what you're interested in..."
-            rows="4"
-            class="rounded-2xl placeholder:text-tagline-2 border border-stroke-6 bg-background-5 placeholder:text-accent/50 text-accent w-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent placeholder:font-normal font-normal resize-none transition-all duration-200"
-            aria-required="true"
-          ></textarea>
-        </fieldset>
-
-        <!-- Submit button -->
-        <div class="flex flex-col sm:flex-row gap-3 pt-2">
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg flex-1 order-1 sm:order-1"
-          >
-            <span>Send message</span>
-          </button>
-          <button
-            type="button"
-            class="btn btn-white-dark hover:btn-white btn-lg flex-1 order-2 sm:order-2 contact-modal-close-btn-secondary border border-stroke-6"
-          >
-            <span>Cancel</span>
+        <!-- Submit -->
+        <div class="pt-4">
+          <button type="submit" id="demo-submit-btn" class="btn btn-primary w-full shadow-lg shadow-primary-500/25 transition-all duration-300 flex items-center justify-center gap-2">
+            <span id="demo-submit-text">Request Demo</span>
+            <svg id="demo-submit-spinner" class="animate-spin -ml-1 mr-3 size-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
           </button>
         </div>
       </form>

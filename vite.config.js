@@ -8,11 +8,26 @@ import injectHTML from 'vite-plugin-html-inject';
 const getHtmlEntries = () => {
   const pagesDir = path.resolve(__dirname, '');
   const entries = {};
-  const files = fs.readdirSync(pagesDir);
-  const htmlFiles = files.filter((file) => file.endsWith('.html'));
-  htmlFiles.forEach((file) => {
-    const name = path.basename(file, '.html');
-    entries[name] = path.resolve(pagesDir, file);
+  
+  // List of active NiyoGen pages to include in the build
+  const activePages = [
+    'index.html',
+    'about-us.html',
+    'tour-guardian.html',
+    'dealmate.html',
+    'niyogen-login.html',
+    'niyogen-register.html',
+    'niyogen-terms.html',
+    'niyogen-privacy.html',
+    'contact-us-page.html'
+  ];
+
+  activePages.forEach((file) => {
+    const filePath = path.resolve(pagesDir, file);
+    if (fs.existsSync(filePath)) {
+      const name = path.basename(file, '.html');
+      entries[name] = filePath;
+    }
   });
 
   return entries;
