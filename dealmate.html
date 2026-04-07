@@ -20,7 +20,7 @@
   <body class="bg-background-8 text-accent antialiased selection:bg-ns-cyan/30">
     <Component
       src="src/components/pages/niyogen/header.htm"
-      class="border border-white/10 bg-background-8/60 backdrop-blur-md"
+      class="border border-secondary/10 bg-white/95 backdrop-blur-md shadow-sm"
     />
     
     <main>
@@ -39,32 +39,39 @@
                   <span class="size-2 rounded-full bg-ns-cyan animate-pulse"></span>
                   <span class="text-[11px] font-bold uppercase tracking-widest text-ns-cyan">Active Intelligence</span>
                 </div>
+                <!-- DealMate Logo -->
+                <div class="flex items-center justify-center lg:justify-start mb-4">
+                  <img src="./images/dealmate.png" alt="Deal Mate" class="h-16 w-auto object-contain" />
+                </div>
                 <h1 data-ns-animate data-delay="0.1" class="text-heading-2 md:text-heading-1 font-bold text-white leading-tight">
-                  Meet <span class="text-ns-cyan">Deal Mate</span>
+                  Meet your <span class="text-ns-cyan">intelligent shopping companion</span>
                 </h1>
                 <p data-ns-animate data-delay="0.2" class="text-xl text-accent/70 leading-relaxed max-w-[600px] mx-auto lg:mx-0">
-                  Your smart shopping AI companion. Designed to help you make confident buying decisions and never overpay.
+                  Deal Mate is your smart shopping companion designed to help you make confident buying decisions and never overpay. Instead of comparing prices across multiple apps and stores, it gives you instant clarity at the moment of purchase.
+                </p>
+                <p data-ns-animate data-delay="0.25" class="text-lg text-accent/60 leading-relaxed max-w-[600px] mx-auto lg:mx-0">
+                  Whether you're in a supermarket, shopping online, or exploring a new city, Deal Mate helps you instantly know if a price is fair, find better nearby deals, and discover relevant discounts on what you actually want. By combining real-time price intelligence, personalized recommendations, and location-aware insights, it transforms everyday shopping into a smarter, faster experience.
+                </p>
+                <p data-ns-animate data-delay="0.28" class="text-lg text-accent/60 leading-relaxed max-w-[600px] mx-auto lg:mx-0">
+                  Deal Mate reduces hesitation, saves time, and maximizes value—empowering you to shop with confidence and make better decisions every time you spend.
                 </p>
               </div>
 
               <div data-ns-animate data-delay="0.3" class="flex flex-wrap justify-center lg:justify-start gap-4">
-                <button class="footer-contact-trigger btn btn-primary btn-xl px-12 group transition-all duration-300">
+                <a href="https://market.niyogen.com/" target="_blank" class="btn btn-primary btn-xl px-12 group transition-all duration-300 inline-flex items-center">
                   <span>Get started</span>
                   <svg class="size-5 ml-2 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                </button>
-                <a href="https://market.niyogen.com/" class="btn btn-white-dark btn-xl px-10 border border-white/10 hover:btn-white transition-colors">
-                  <span>Explore Market</span>
                 </a>
               </div>
 
               <div data-ns-animate data-delay="0.4" class="pt-8 grid grid-cols-2 gap-8 border-t border-white/5 max-w-[500px] mx-auto lg:mx-0">
                 <div>
                   <p class="text-white font-bold text-2xl mb-1">85%</p>
-                  <p class="text-tagline-2 text-accent/40 uppercase tracking-widest">Savings Found</p>
+                  <p class="text-tagline-2 text-accent/40 uppercase tracking-widest">of users say it helps them make better decisions</p>
                 </div>
                 <div>
                   <p class="text-white font-bold text-2xl mb-1">Instant</p>
-                  <p class="text-tagline-2 text-accent/40 uppercase tracking-widest">Price Analysis</p>
+                  <p class="text-tagline-2 text-accent/40 uppercase tracking-widest">Deal Comparisons</p>
                 </div>
               </div>
             </div>
@@ -106,48 +113,6 @@
                     </div>
                  </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- How it Works section -->
-      <section class="py-24 bg-background-5 border-y border-white/5">
-        <div class="main-container">
-          <div class="text-center mb-16">
-            <h2 class="text-heading-3 md:text-heading-2 font-bold text-white mb-4">How it <span class="text-ns-cyan">Works</span></h2>
-            <p class="text-accent/60 max-w-[600px] mx-auto">Instant clarity at the moment of purchase, wherever you are.</p>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Step 1 -->
-            <div data-ns-animate data-delay="0.1" class="relative group p-10 rounded-4xl border border-white/5 bg-secondary/20 hover:border-ns-cyan/30 transition-all duration-500">
-               <div class="text-heading-1 font-black text-white/5 absolute -top-4 -left-4 group-hover:text-ns-cyan/10 transition-colors">01</div>
-               <div class="size-16 rounded-2xl bg-ns-cyan/10 border border-ns-cyan/30 flex items-center justify-center mb-8 glow-teal">
-                  <svg class="size-8 text-ns-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-               </div>
-               <h3 class="text-heading-5 font-bold mb-4 text-white">Detect Location</h3>
-               <p class="text-accent/60 leading-relaxed">Smart sensors know where you are shopping and automatically activate the relevant price database.</p>
-            </div>
-
-            <!-- Step 2 -->
-            <div data-ns-animate data-delay="0.2" class="relative group p-10 rounded-4xl border border-white/5 bg-secondary/20 hover:border-ns-cyan/30 transition-all duration-500">
-               <div class="text-heading-1 font-black text-white/5 absolute -top-4 -left-4 group-hover:text-ns-cyan/10 transition-colors">02</div>
-               <div class="size-16 rounded-2xl bg-primary-500/10 border border-primary-500/30 flex items-center justify-center mb-8">
-                  <svg class="size-8 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
-               </div>
-               <h3 class="text-heading-5 font-bold mb-4 text-white">Scan Retailers</h3>
-               <p class="text-accent/60 leading-relaxed">Deal Mate scans thousands of online and offline retailers in milliseconds to find hidden discounts.</p>
-            </div>
-
-            <!-- Step 3 -->
-            <div data-ns-animate data-delay="0.3" class="relative group p-10 rounded-4xl border border-white/5 bg-secondary/20 hover:border-ns-cyan/30 transition-all duration-500">
-               <div class="text-heading-1 font-black text-white/5 absolute -top-4 -left-4 group-hover:text-ns-cyan/10 transition-colors">03</div>
-               <div class="size-16 rounded-2xl bg-ns-green/10 border border-ns-green/30 flex items-center justify-center mb-8">
-                  <svg class="size-8 text-ns-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-               </div>
-               <h3 class="text-heading-5 font-bold mb-4 text-white">Best Price Surfaced</h3>
-               <p class="text-accent/60 leading-relaxed">The optimized deal is surfaced on your dashboard. Tap to apply or navigate to the store.</p>
             </div>
           </div>
         </div>

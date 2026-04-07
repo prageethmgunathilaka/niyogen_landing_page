@@ -24,6 +24,13 @@ class FooterContactModal {
     this.content = document.querySelector('.footer-contact-content');
     this.triggers = document.querySelectorAll('.footer-contact-trigger');
     this.closeBtns = document.querySelectorAll('.footer-contact-close');
+
+    // Form elements
+    this.form = document.getElementById('demo-request-form');
+    this.successMessage = document.getElementById('demo-success-message');
+    this.submitBtn = document.getElementById('demo-submit-btn');
+    this.submitText = document.getElementById('demo-submit-text');
+    this.submitSpinner = document.getElementById('demo-submit-spinner');
   }
 
   setInitialState() {
@@ -63,6 +70,63 @@ class FooterContactModal {
         this.closeModal();
       }
     });
+
+    // Handle form submission
+    if (this.form) {
+      this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+    }
+  }
+
+  async handleSubmit(e) {
+    e.preventDefault();
+
+    if (!this.form || !this.submitBtn) return;
+
+    // Collect Data
+    const formData = new FormData(this.form);
+    const data = Object.fromEntries(formData.entries());
+
+    // UI Loading State
+    this.submitBtn.disabled = true;
+    this.submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
+    if (this.submitText) this.submitText.textContent = 'Sending...';
+    if (this.submitSpinner) this.submitSpinner.classList.remove('hidden');
+
+    try {
+      const response = await fetch('/api/demo-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        // Show Success Message
+        this.form.classList.add('hidden');
+        if (this.successMessage) {
+          this.successMessage.classList.remove('hidden');
+          if (typeof gsap !== 'undefined') {
+            gsap.fromTo(this.successMessage, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.5)"});
+          }
+        }
+      } else {
+        alert(result.message || 'Something went wrong. Please try again.');
+        this.resetSubmitButton();
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Network error. Please try again later.');
+      this.resetSubmitButton();
+    }
+  }
+
+  resetSubmitButton() {
+    if (!this.submitBtn) return;
+    this.submitBtn.disabled = false;
+    this.submitBtn.classList.remove('opacity-80', 'cursor-not-allowed');
+    if (this.submitText) this.submitText.textContent = 'Request Demo';
+    if (this.submitSpinner) this.submitSpinner.classList.add('hidden');
   }
 
   openModal() {
@@ -101,8 +165,19 @@ class FooterContactModal {
     this.isModalOpen = false;
     document.body.style.overflow = '';
 
+    const resetFormState = () => {
+      if (this.form) {
+        this.form.reset();
+        this.form.classList.remove('hidden');
+      }
+      if (this.successMessage) {
+        this.successMessage.classList.add('hidden');
+      }
+      this.resetSubmitButton();
+    };
+
     if (typeof gsap !== 'undefined') {
-      const tl = gsap.timeline();
+      const tl = gsap.timeline({ onComplete: resetFormState });
       
       tl.to(this.content, {
           scale: 0.8,
@@ -122,6 +197,7 @@ class FooterContactModal {
       this.overlay.style.opacity = '0';
       this.content.style.transform = 'scale(0.8)';
       this.content.style.opacity = '0';
+      setTimeout(resetFormState, 300);
     }
   }
 }

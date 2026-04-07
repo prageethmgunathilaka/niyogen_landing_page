@@ -3,7 +3,6 @@ Initialized all js files here
 =========================== */
 
 import './js/animation/accordion';
-import './js/animation/contact-modal';
 import './js/animation/footer-contact-modal';
 import './js/animation/gradient-path';
 import './js/animation/header';
